@@ -1,0 +1,114 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{BlockchainAdoptionsMaritime}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0308-8839}
+      \field{langid}{english}
+      \field{shorttitle}{Blockchain Adoptions in the Maritime Industry}
+      \field{title}{Blockchain Adoptions in the Maritime Industry: A Conceptual Framework}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/epdf/10.1080/03088839.2020.1825855?needAccess=true
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/epdf/10.1080/03088839.2020.1825855?needAccess=true
+      \endverb
+    \endentry
+    \entry{EthereumWhitepaper}{misc}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An introductory paper to Ethereum, published in 2013 before its launch.}
+      \field{journaltitle}{ethereum.org}
+      \field{langid}{english}
+      \field{title}{Ethereum {{Whitepaper}}}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ethereum.org
+      \endverb
+      \verb{url}
+      \verb https://ethereum.org
+      \endverb
+      \keyw{whitepaper}
+    \endentry
+    \entry{HereHowMuch}{misc}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{title}{Here's How Much Was Lost to Crypto Hacks and Exploits in {{Q1}} 2023 | {{Bitcoin Insider}}}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bitcoininsider.org/article/211488/heres-how-much-was-lost-crypto-hacks-and-exploits-q1-2023
+      \endverb
+      \verb{url}
+      \verb https://www.bitcoininsider.org/article/211488/heres-how-much-was-lost-crypto-hacks-and-exploits-q1-2023
+      \endverb
+    \endentry
+    \entry{SmartContractsMarket}{misc}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The global smart contracts market size was valued at USD 684.3 million in 2022 and is expected to grow at a CAGR of 82.2\% from 2023 to 2030}
+      \field{langid}{english}
+      \field{title}{Smart {{Contracts Market Size}}, {{Share}}, \& {{Trends}} [2023 {{Report}}]}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.grandviewresearch.com/industry-analysis/smart-contracts-market-report
+      \endverb
+      \verb{url}
+      \verb https://www.grandviewresearch.com/industry-analysis/smart-contracts-market-report
+      \endverb
+    \endentry
+    \entry{TechnologyTippingPoints}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{title}{Technology {{Tipping Points}} and {{Societal Impact}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www3.weforum.org/docs/WEF\_GAC15\_Technological\_Tipping\_Points\_report\_2015.pdf
+      \endverb
+      \verb{url}
+      \verb https://www3.weforum.org/docs/WEF%5C_GAC15%5C_Technological%5C_Tipping%5C_Points%5C_report%5C_2015.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
