@@ -1,0 +1,168 @@
+% Created 2023-10-01 Sun 11:03
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Ana Julia}
+\date{\today}
+\title{Explorando e classificando bugs comumente encontrados em contratos inteligentes}
+\hypersetup{
+ pdfauthor={Ana Julia},
+ pdftitle={Explorando e classificando bugs comumente encontrados em contratos inteligentes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.7)}, 
+ pdflang={English}}
+\usepackage{biblatex}
+\addbibresource{references plain limit:t}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\bibliographystyle{plain}
+\bibliography{references}
+\section{Introdução}
+\label{sec:org57b5374}
+A tecnologia blockchain, primeiramente introduzida por Satoshi Nakamoto em 2008, é identificada como uma megatendência computacional capaz de revolucionar múltiplos setores industriais\cite{1}. As características distintas de segurança, transparência e rastreabilidade inerentes à blockchain têm incentivado uma ampla gama de setores a explorar seu uso na reestruturação de suas operações fundamentais. A aplicabilidade dessa tecnologia ultrapassa o domínio das criptomoedas, abarcando setores como pagamentos, gerenciamento de identidade, saúde, eleições governamentais e outros\cite{2}.
+
+A publicação do whitepaper do Ethereum em 2014 simbolizou um avanço considerável na evolução da tecnologia blockchain\cite{3}. Diferentemente do Bitcoin, concebido originalmente como uma moeda digital, o Ethereum inaugurou uma funcionalidade disruptiva no campo da tecnologia blockchain: os contratos inteligentes. A inovação trazida pelo Ethereum reside na incorporação de uma máquina virtual capaz de processar códigos em linguagens de programação \textit{Turing complete} na blockchain, habilitando assim a construção de aplicativos descentralizados. Estes aplicativos propõem a substituição dos sistemas de back-end por contratos inteligentes que operam em uma blockchain\cite{7}. Devido as características inerentes a tecnologia blockchain, como a transparência e descentralização, os aplicativos que rodam no Ethereum são sucetíveis a vulnerabilidades que podem ser exploradas por hackers, resultando em grande prejuízo financeiro para os protocolos e utilizadores dos mesmos. Apenas no primeiro trimestre de 2023, 320 milhões de dólares foram perdidos devido a ataque de hackers no Ethereum\autocite{1}.
+
+
+\cite{1}
+\section{Revisão Bibiográfica}
+\label{sec:orga8686da}
+
+O que é EVM, EOA, contracts, transactions (nonce).
+\section{Metodologia}
+\label{sec:org9a02fd6}
+\subsection{Perguntas}
+\label{sec:org938e8a1}
+\begin{itemize}
+\item Categorizando bugs
+\end{itemize}
+\subsection{Categorias dos protocolos}
+\label{sec:org7f77e35}
+\begin{itemize}
+\item Liquid Staking: Protocols that enable you to earn staking rewards on your tokens while also providing a tradeable and liquid receipt for your staked position
+\item Lending: Protocols that allow users to borrow and lend assets
+\item Dexes: Protocols where you can swap/trade cryptocurrency
+\item Bridge: Protocols that bridge tokens from one network to another
+\item CDP: Protocols that mint its own stablecoin using collateralized lending
+\item Services: Protocols that provide a service to the user
+\item Yield: Protocols that pay you a reward for your staking/LP on their platform
+\item RWA: Protocols that involve Real World Assets, such as house tokenization
+\item Derivatives: Protocols for betting with leverage
+\item Yield Aggregator: Protocols that aggregated yield from diverse protocols
+\item Cross Chain: Protocols that add interoperability between different blockchains
+\item Synthetics: Protocol that created a tokenized derivative that mimics the value of another asset.
+\item Launchpad: Protocols that launch new projects and coins
+\item Indexes: Protocols that have a way to track/created the performance of a group of related assets
+\item Liquidity manager: Protocols that manage Liquidity Positions in concentrated liquidity AMMs
+\item Insurance: Protocols that are designed to provide monetary protections
+\item Privacy: Protocols that have the intention of hiding information about transactions
+\item Infrastructure
+\item Algo-Stables: Protocols that provide algorithmic coins to stablecoins
+\item Payments: Protocols that offer the ability to pay/send/receive cryptocurrency
+\item Leveraged Farming: Protocols that allow you to leverage yield farm with borrowed money
+\item Staking Pool: Refers to platforms where users stake their assets on native blockchains to help secure the network and earn rewards. Unlike Liquid Staking, users don't receive a token representing their staked assets, and their funds are locked up during the staking period, limiting participation in other DeFi activities
+\item NFT Marketplace: Protocols where users can buy/sell/rent NFTs
+\item NFT Lending: Protocols that allow you to collateralize your NFT for a loan
+\item Options: Protocols that give you the right to buy an asset at a fixed price
+\item Options Vault: Protocols that allow you to deposit collateral into an options strategy
+\item Prediction Market: Protocols that allow you to wager/bet/buy in future results
+\item Decentralized Stablecoin: Coins pegged to USD through decentralized mechanisms
+\item Farm: Protocols that allow users to lock money in exchange for a protocol token
+\item Uncollateralized Lending:Protocol that allows you to lend against known parties that can borrow without collaterall
+\item Reserve Currency: OHM forks: Protocols that uses a reserve of valuable assets acquired through bonding and staking to issue and back its native token
+\item RWA Lending: Protocols that bridge traditional finance and blockchain ecosystems by tokenizing real-world assets for use as collateral or credit assessment, enabling decentralized lending and borrowing opportunities.
+\item Gaming: Protocols that have gaming components
+\item Oracle: Protocols that connect data from the outside world (off-chain) with the blockchain world (on-chain)
+\item P2P File distributoin system
+\item DAO
+\end{itemize}
+
+Fonte: \url{https://defillama.com/categories}
+\subsection{Classificação dos bugs}
+\label{sec:org1eabfe8}
+\begin{itemize}
+\item O2: We cannot access the source code of the project.
+\item O4: Bugs that occur in off-chain components
+\item C3: Erroneous state updates.
+\begin{itemize}
+\item S3-1: Missing state update.
+\item S3-2: Incorrect state updates, e.g., a state update that should not be there.
+\end{itemize}
+\item C5: Privilege escalation and access control issues.
+\begin{itemize}
+\item C5-1: Users can update privileged state variables arbitrarily (caused by lack of ID-unrelated input sanitization).
+\item C5-2: Users can invoke some functions at a time they should not be able to do so.
+\item C5-3: Privileged functions can be called by anyone or at any time.
+\item C5-4: Funds can get locked due to missing withdraw code
+\end{itemize}
+\item C6: Erroneous accounting.
+\begin{itemize}
+\item C6-1: Incorrect calculating order.
+\item C6-2: Returning an unexpected value that deviates from the expected semantics specified for the contract.
+\item C6-3: Calculations performed with incorrect numbers (e.g., x = a + b ==> x = a + c).
+\item C6-4: Other accounting errors (e.g., x = a + b ==> x = a - b).
+\end{itemize}
+\item C7: Broken business logic
+\begin{itemize}
+\item C7-1: Unexpected function invocation sequences (e.g., external calls to dependent contracts).
+\item C7-2: Unexpected environment or contract conditions (e.g., ChainLink returning outdated data or significant slippage occurring).
+\item C7-3: A given function is invoked multiple times unexpectedly.
+\item C7-4: Unexpected function arguments.
+\end{itemize}
+\item C8: Contract implementation-specific bugs. These bugs are difficult to categorize into the above categories.
+\item C9: Lack of signature replay protection, e.g missing nonce
+\item C10: Missing check.
+Missing Check refers to a critical oversight in a smart contract's code where a necessary condition or validation is not properly implemented.
+\end{itemize}
+\subsection{Dados coletados}
+\label{sec:org4468182}
+Foi feito a curadoria de 477 bugs classificados com severidade alta
+
+\begin{center}
+\begin{tabular}{lllrlllll}
+Plataforma & Protocolo & Categoria do protocolo & N de auditores & Descrição & Link & Classificação & Rev & \\[0pt]
+\hline
+Sherlock & Perennial V2 & Derivatives & 4 & Oracle request timestamp and pending position timestamp mismatch can make most position updates invalid & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/42}{Github} & C3-2 &  & \\[0pt]
+Sherlock & Perennial V2 & Derivatives & 1 & Invalid oracle versions can cause desync of global and local positions making protocol lose funds and being unable to pay back all users & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/49}{Github} &  &  & \\[0pt]
+Sherlock & Perennial V2 & Derivatives & 4 & Protocol fee from Market.sol is locked & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/52}{Github} & C5-4 &  & \\[0pt]
+Sherlock & Perennial V2 & Derivatives & 3 & PythOracle:if price.expo is less than 0, wrong prices will be recorded & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/56}{Github} & C6-4 &  & \\[0pt]
+Sherlock & Perennial V2 & Derivatives & 4 & Vault.sol: settleing the 0 address will disrupt accounting & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/62}{Github} &  &  & \\[0pt]
+Sherlock & Perennial V2 & Derivatives & 1 & Keepers will suffer significant losses due to miss compensation for L1 rollup fees & \href{https://github.com/sherlock-audit/2023-07-perennial-judging/issues/91}{Github} &  &  & \\[0pt]
+Sherlock & Blueberry & Leverage Farming & 1 & Stable BPT valuation is incorrect and can be exploited to cause protocol insolvency & \href{https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/97}{Github} &  &  & \\[0pt]
+Sherlock & Blueberry & Leverage Farming & 2 & CurveTricryptoOracle incorrectly assumes that WETH is always the last token in the pool which leads to bad LP pricing & \href{https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/98}{Github} & C8 &  & \\[0pt]
+Sherlock & Blueberry & Leverage Farming & 2 & CurveTricryptoOracle\#getPrice contains math error that causes LP to be priced completely wrong & \href{https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/100}{Github} & C6-3 &  & \\[0pt]
+Sherlock & Blueberry & Leverage Farming & 1 & CVX/AURA distribution calculation is incorrect and will lead to loss of rewards at the end of each cliff & \href{https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/100}{Github} &  &  & \\[0pt]
+Sherlock & Blueberry & Leverage Farming & 1 & wrong bToken's exchangeRateStored used for calculate ColleteralValue & \href{https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/117}{Github} &  &  & \\[0pt]
+Code4Arena & Arbitrum Foundation & DAO & 3 & Signatures can be replayed in `castVoteWithReasonAndParamsBySig()` to use up more votes than a user intended & \href{https://code4rena.com/reports/2023-08-arbitrum}{Code4Arena} & C9 &  & \\[0pt]
+Code4Arena & PoolTogether & Yield & 1 & Too many rewards are distributed when a draw is closed & \href{https://code4rena.com/reports/2023-08-pooltogether}{Code4Arena} & C6-3 &  & \\[0pt]
+Code4Arena & PoolTogether & Yield & 16 & rngComplete function should only be called by rngAuctionRelayer & \href{https://code4rena.com/reports/2023-08-pooltogether}{Code4Arena} & C5-3 &  & \\[0pt]
+Sherlock & Tokensoft & Launchpad & 24 & ``Votes'' balance can be increased indefinitely in multiple contracts & \href{https://github.com/sherlock-audit/2023-06-tokensoft-judging/issues/41}{Github} & C5-3 &  & \\[0pt]
+Sherlock & Bond Options & Options & 14 & All fund from Teller contract can be drained because a malicious receiver can call reclaim repeatedly & \href{https://github.com/sherlock-audit/2023-06-bond-judging/issues/79}{Github} & C3-1 &  & \\[0pt]
+Sherlock & Bond Options & Options & 4 & All funds can be stolen from FixedStrikeOptionTeller using a token with malicious decimals & \href{https://github.com/sherlock-audit/2023-06-bond-judging/issues/90}{Github} & C7-1 &  & \\[0pt]
+Sherlock & Symmetrical Update & Derivatives & 2 & liquidatePartyA requires signature which doesn't have nonce, making possible unfair liquidation and loss of funds for all parties & \href{https://github.com/sherlock-audit/2023-08-symmetrical-judging/issues/5}{Github} & C9 &  & \\[0pt]
+Sherlock & Symmetrical Update & Derivatives & 2 & liquidatePositionsPartyA limits partyB loss to partyB allocated balance, which can lead to inflated partyB balance and loss of funds for protocol users & \href{https://github.com/sherlock-audit/2023-08-symmetrical-judging/issues/6}{Github} & C6-3 &  & \\[0pt]
+Sherlock & Cooler Update & Lending & 3 & Can steal gOhm by calling Clearinghouse.claimDefaulted on loans not made by Clearinghouse & \href{https://github.com/sherlock-audit/2023-08-cooler-judging/issues/28}{Github} & C10 &  & \\[0pt]
+\end{tabular}
+\end{center}
+\section{Desenvolvimento \#encontrar nome melhor}
+\label{sec:org365c5c7}
+\subsection{Categorias}
+\label{sec:orgb804cbe}
+
+\subsection{Dificuldade}
+\label{sec:org7064afb}
+\end{document}
