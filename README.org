@@ -1,0 +1,28 @@
+* Solidity common vulnerabilities
+
+This repository contains a [[./dataset.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
+
+The contests analyzed were the following:
+
+| Platform  | Contest                                   |
+|-----------+-------------------------------------------|
+| Code4rena | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum Security Council Election System]] |
+| Code4rena | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |
+| Code4rena | [[https://code4rena.com/reports/2023-06-lybra][Lybra Finance]]                             |
+| Code4rena | [[https://code4rena.com/reports/2023-05-maia][Maia DAO Ecosystem]]                        |
+| Code4rena | [[https://code4rena.com/reports/2023-08-pooltogether][PoolTogether]]                              |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/75][Ajna Update]]                               |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/41][Blueberry]]                                 |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/99][Bond Options]]                              |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/107][Cooler Update]]                             |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/97][GFX Labs]]                                  |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/74][GMX]]                                       |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/84][Iron Bank]]                                 |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/79][Perennial]]                                 |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/106][Perennial V2]]                              |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/85][Symmetrical]]                               |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/100][Tokensoft]]                                 |
+| Sherlock  | [[https://audits.sherlock.xyz/contests/73][Unitas Protocol]]                           |
+
+
+* Findings
