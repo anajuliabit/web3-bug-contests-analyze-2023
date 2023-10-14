@@ -2,9 +2,9 @@
 
 This repository contains a [[./dataset.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
 
-The contests analyzed were the following:
+** Contests
 
-HRF: High Risk Findings
+The contests analyzed were the following:
 
 | Platform   | Category | Contest                                   |  Bounty | HRF | Participants |    Date |
 |------------+----------+-------------------------------------------+---------+-----+--------------+---------|
@@ -30,17 +30,10 @@ HRF: High Risk Findings
 | Totals     |          |                                           | 1558150 | 104 |    164.72222 |         |
 #+TBLFM: @20$4=vsum(@2$4..@-1$4)::@20$5=vsum(@2$5..@-1$5)::@20$6=vmean(@2$6..@-1$6)
 
-| A | B |
-|---+---|
-| 1 | 2 |
-| 3 | 4 |
-|---+---|
-|   |   |
-#+TBLFM: $2=sum(@2$1..@-1$1)
+*** Labels
+- HRF: High Risk Findings
 
-
-
-** Totals
+** Results
 
 | Category | Totals | Avg Auditors |
 |----------+--------+--------------|
