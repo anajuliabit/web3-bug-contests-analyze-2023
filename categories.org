@@ -1,4 +1,4 @@
-* Vulnerability categories
+* Attack vectors classifications
 - O: Out-of-scope
  + We cannot access the source code of the project.
  + Bugs that occur in off-chain components

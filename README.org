@@ -4,25 +4,64 @@ This repository contains a [[./dataset.csv][dataset]] of high vulnerabilities re
 
 The contests analyzed were the following:
 
-| Platform  | Contest                                   |
-|-----------+-------------------------------------------|
-| Code4rena | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum Security Council Election System]] |
-| Code4rena | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |
-| Code4rena | [[https://code4rena.com/reports/2023-06-lybra][Lybra Finance]]                             |
-| Code4rena | [[https://code4rena.com/reports/2023-05-maia][Maia DAO Ecosystem]]                        |
-| Code4rena | [[https://code4rena.com/reports/2023-08-pooltogether][PoolTogether]]                              |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/75][Ajna Update]]                               |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/41][Blueberry]]                                 |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/99][Bond Options]]                              |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/107][Cooler Update]]                             |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/97][GFX Labs]]                                  |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/74][GMX]]                                       |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/84][Iron Bank]]                                 |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/79][Perennial]]                                 |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/106][Perennial V2]]                              |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/85][Symmetrical]]                               |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/100][Tokensoft]]                                 |
-| Sherlock  | [[https://audits.sherlock.xyz/contests/73][Unitas Protocol]]                           |
+HRF: High Risk Findings
+
+| Platform   | Category | Contest                                   |  Bounty | HRF | Participants |    Date |
+|------------+----------+-------------------------------------------+---------+-----+--------------+---------|
+| Code4rena  | DAO      | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum Security Council Election System]] |   90500 |   1 |           39 | 2023-09 |
+| Code4rena  |          | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |   60500 |   2 |           50 | 2023-07 |
+| Code4rena  |          | [[https://code4rena.com/reports/2023-06-lybra][Lybra Finance]]                             |   60500 |   8 |          136 | 2023-08 |
+| Code4rena  |          | [[https://code4rena.com/reports/2023-05-maia][Maia DAO Ecosystem]]                        |  300500 |  35 |           85 | 2023-05 |
+| Code4Arena |          | [[https://code4rena.com/reports/2023-07-pooltogether#wardens][PoolTogether]]                              |  121650 |   9 |          117 | 2023-07 |
+| Code4rena  |          | [[https://code4rena.com/reports/2023-08-pooltogether][PoolTogether V5: Part Deux]]                |   42000 |   2 |           45 | 2023-08 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/75][Ajna Update]]                               |   85600 |   6 |          155 | 2023-06 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/41][Blueberry]]                                 |   72500 |  10 |          284 | 2023-02 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/99][Bond Options]]                              |   23600 |   2 |          153 | 2023-07 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/107][Cooler Update]]                             |   17000 |   4 |          170 | 2023-08 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/97][GFX Labs]]                                  |   20400 |   2 |          106 | 2023-07 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/74][GMX]]                                       |  200000 |   5 |          220 | 2023-04 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/84][Iron Bank]]                                 |   67400 |   1 |          271 | 2023-05 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/79][Perennial]]                                 |  122000 |   1 |          220 | 2023-05 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/106][Perennial V2]]                              |  125200 |   6 |          252 | 2023-07 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/85][Symmetrical]]                               |   91000 |   8 |          233 | 2023-06 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/100][Tokensoft]]                                 |   21400 |   1 |          221 | 2023-07 |
+| Sherlock   |          | [[https://audits.sherlock.xyz/contests/73][Unitas Protocol]]                           |   36400 |   1 |          208 | 2023-06 |
+|------------+----------+-------------------------------------------+---------+-----+--------------+---------|
+| Totals     |          |                                           | 1558150 | 104 |    164.72222 |         |
+#+TBLFM: @20$4=vsum(@2$4..@-1$4)::@20$5=vsum(@2$5..@-1$5)::@20$6=vmean(@2$6..@-1$6)
+
+| A | B |
+|---+---|
+| 1 | 2 |
+| 3 | 4 |
+|---+---|
+|   |   |
+#+TBLFM: $2=sum(@2$1..@-1$1)
 
 
-* Findings
+
+** Totals
+
+| Category | Totals | Avg Auditors |
+|----------+--------+--------------|
+| C01      |      9 |     9.777778 |
+| C02      |      1 |     2.000000 |
+| C03      |     14 |     4.785714 |
+| C04      |      1 |    12.000000 |
+| C05      |      8 |    13.000000 |
+| C06      |     26 |     4.115385 |
+| C07      |     15 |     6.600000 |
+| C08      |      1 |     1.000000 |
+| C09      |      4 |     3.750000 |
+| C10      |      5 |     1.600000 |
+| C11      |      1 |     6.000000 |
+| C12      |      2 |     8.500000 |
+| C13      |      1 |     4.000000 |
+| C14      |      2 |     9.000000 |
+| C15      |      1 |    11.000000 |
+| C16      |      0 |            0 |
+| O        |      8 |     4.625000 |
+
+** Findings
+
+- Contract implementation-specific bugs are more difficult to be found.
