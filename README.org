@@ -6,102 +6,38 @@ This repository contains a [[./dataset.csv][dataset]] of high vulnerabilities re
 
 The contests analyzed were the following:
 #+tblname: contests
-| platform   | category                 | contest                                   |  bounty | hrf | participants |    date |
-|------------+--------------------------+-------------------------------------------+---------+-----+--------------+---------|
-| code4rena  | dao                      | [[https://code4rena.com/reports/2023-08-arbitrum][arbitrum security council election system]] |   90500 |   1 |           39 | 2023-09 |
-| code4rena  | dao                      | [[https://code4rena.com/reports/2023-06-llama][llama]]                                     |   60500 |   2 |           50 | 2023-07 |
-| code4rena  | cdp                      | [[https://code4rena.com/reports/2023-06-lybra][lybra finance]]                             |   60500 |   8 |          136 | 2023-08 |
-| code4rena  | dexes                    | [[https://code4rena.com/reports/2023-05-maia][maia dao ecosystem]]                        |  300500 |  35 |           85 | 2023-05 |
-| code4arena | yield                    | [[https://code4rena.com/reports/2023-07-pooltogether#wardens][pooltogether]]                              |  121650 |   9 |          117 | 2023-07 |
-| code4rena  | yield                    | [[https://code4rena.com/reports/2023-08-pooltogether][pooltogether v5: part deux]]                |   42000 |   2 |           45 | 2023-08 |
-| sherlock   | lending                  | [[https://audits.sherlock.xyz/contests/75][ajna update]]                               |   85600 |   6 |          155 | 2023-06 |
-| sherlock   | yield agreggator         | [[https://audits.sherlock.xyz/contests/41][blueberry]]                                 |   72500 |  10 |          284 | 2023-02 |
-| sherlock   | options                  | [[https://audits.sherlock.xyz/contests/99][bond options]]                              |   23600 |   2 |          153 | 2023-07 |
-| sherlock   | lending                  | [[https://audits.sherlock.xyz/contests/107][cooler update]]                             |   17000 |   4 |          170 | 2023-08 |
-| sherlock   | dexes                    | [[https://audits.sherlock.xyz/contests/97][gfx labs]]                                  |   20400 |   2 |          106 | 2023-07 |
-| sherlock   | derivatives              | [[https://audits.sherlock.xyz/contests/74][gmx]]                                       |  200000 |   5 |          220 | 2023-04 |
-| sherlock   | lending                  | [[https://audits.sherlock.xyz/contests/84][iron bank]]                                 |   67400 |   1 |          271 | 2023-05 |
-| sherlock   | derivatives              | [[https://audits.sherlock.xyz/contests/79][perennial]]                                 |  122000 |   1 |          220 | 2023-05 |
-| sherlock   | derivatives              | [[https://audits.sherlock.xyz/contests/106][perennial v2]]                              |  125200 |   6 |          252 | 2023-07 |
-| sherlock   | derivatives              | [[https://audits.sherlock.xyz/contests/85][symmetrical]]                               |   91000 |   8 |          233 | 2023-06 |
-| sherlock   | launchpad                | [[https://audits.sherlock.xyz/contests/100][tokensoft]]                                 |   21400 |   1 |          221 | 2023-07 |
-| sherlock   | decentralized stablecoin | [[https://audits.sherlock.xyz/contests/73][unitas protocol]]                           |   36400 |   1 |          208 | 2023-06 |
-| code4arena | rwa                      | [[https://code4rena.com/contests/2023-01-ondo-finance-contest][ondo finance]]                              |   60500 |   1 |           74 | 2023-01 |
-| sherlock   | indexes                  | [[https://audits.sherlock.xyz/contests/81][index coop]]                                |  130600 |   2 |          283 | 2023-05 |
-| sherlock   | decentralized stablecoin | [[https://audits.sherlock.xyz/contests/82][ussd]]                                      |   18200 |   3 |          224 | 2023-05 |
-| sherlock   | rwa                      | [[https://audits.sherlock.xyz/contests/98][dinari]]                                    |   16000 |   1 |          176 | 2023-07 |
-|------------+--------------------------+-------------------------------------------+---------+-----+--------------+---------|
-| totals     |                          |                                           | 1749484 | 111 |    169.18182 |         |
+| PLATFORM   | CATEGORY         | CONTEST                                   |  BOUNTY | HRF | PARTICIPANTS |    DATE |
+|------------+------------------+-------------------------------------------+---------+-----+--------------+---------|
+| Code4rena  | DAO              | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum security council election system]] |   90500 |   1 |           39 | 2023-09 |
+| Code4rena  | DAO              | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |   60500 |   2 |           50 | 2023-07 |
+| Code4rena  | Cdp              | [[https://code4rena.com/reports/2023-06-lybra][lybra finance]]                             |   60500 |   8 |          136 | 2023-08 |
+| Code4rena  | Dexes            | [[https://code4rena.com/reports/2023-05-maia][Maia dao ecosystem]]                        |  300500 |  35 |           85 | 2023-05 |
+| Code4arena | Yield            | [[https://code4rena.com/reports/2023-07-pooltogether#wardens][Pooltogether]]                              |  121650 |   9 |          117 | 2023-07 |
+| Code4rena  | Yield            | [[https://code4rena.com/reports/2023-08-pooltogether][Pooltogether v5: part deux]]                |   42000 |   2 |           45 | 2023-08 |
+| Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/75][Ajna update]]                               |   85600 |   6 |          155 | 2023-06 |
+| Sherlock   | Yield agreggator | [[https://audits.sherlock.xyz/contests/41][Blueberry]]                                 |   72500 |  10 |          284 | 2023-02 |
+| Sherlock   | Options          | [[https://audits.sherlock.xyz/contests/99][Bond options]]                              |   23600 |   2 |          153 | 2023-07 |
+| Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/107][Cooler update]]                             |   17000 |   4 |          170 | 2023-08 |
+| Sherlock   | Dexes            | [[https://audits.sherlock.xyz/contests/97][Gfx labs]]                                  |   20400 |   2 |          106 | 2023-07 |
+| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/74][Gmx]]                                       |  200000 |   5 |          220 | 2023-04 |
+| Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/84][Iron bank]]                                 |   67400 |   1 |          271 | 2023-05 |
+| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/79][Perennial]]                                 |  122000 |   1 |          220 | 2023-05 |
+| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/106][Perennial v2]]                              |  125200 |   6 |          252 | 2023-07 |
+| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/85][Symmetrical]]                               |   91000 |   8 |          233 | 2023-06 |
+| Sherlock   | Launchpad        | [[https://audits.sherlock.xyz/contests/100][Tokensoft]]                                 |   21400 |   1 |          221 | 2023-07 |
+| Sherlock   | Stablecoin       | [[https://audits.sherlock.xyz/contests/73][Unitas protocol]]                           |   36400 |   1 |          208 | 2023-06 |
+| Code4arena | RWA              | [[https://code4rena.com/contests/2023-01-ondo-finance-contest][Ondo finance]]                              |   60500 |   1 |           74 | 2023-01 |
+| Sherlock   | Indexes          | [[https://audits.sherlock.xyz/contests/81][Index coop]]                                |  130600 |   2 |          283 | 2023-05 |
+| Sherlock   | Stablecoin       | [[https://audits.sherlock.xyz/contests/82][USSD]]                                      |   18200 |   3 |          224 | 2023-05 |
+| Sherlock   | RWA              | [[https://audits.sherlock.xyz/contests/98][Dinari]]                                    |   16000 |   1 |          176 | 2023-07 |
+|------------+------------------+-------------------------------------------+---------+-----+--------------+---------|
+| TOTALS     |                  |                                           | 1783450 | 111 |    169.18182 |         |
 #+tblfm: @24$4=vsum(@2$4..@-1$4)::@24$5=vsum(@2$5..@-1$5)::@24$6=vmean(@2$6..@-1$6)
 
 
 *** Labels
 - HRF: High Risk Findings
 
-*** Processing data
-
-#+begin_src nim :results output :exports code
-import os, strutils, tables, sequtils
-
-# Read CSV file
-let csvData = readFile("results/contests.csv").splitLines()
-var data = initTable[string, (int, int, float, int)]()
-
-# Process CSV data
-for line in csvData[1..^2]:  # Skip header
-  let fields = line.split(",")
-  let category = fields[1]
-  let bounty = parseInt(fields[3])
-  let hrf = parseInt(fields[4])
-  let participants = if fields[5].contains('.'): parseFloat(fields[5]) else: float(parseInt(fields[5]))
-  if data.contains(category):
-    data[category] = (
-      data[category][0] + bounty,
-      data[category][1] + hrf,
-      data[category][2] + float(participants),
-      data[category][3] + 1
-    )
-  else:
-    data[category] = (bounty, hrf, float(participants), 1)
-
-# Write aggregated data to a file
-let outFile = open("results/agg_contests.txt", fmWrite)
-outFile.writeLine("Category Total_Bounty Total_HRF Avg_Participants")
-for category, values in data:
-  let avgParticipants = values[2] / float(values[3])
-  outFile.writeLine(format("{0} {1} {2} {3}", category, values[0], values[1], avgParticipants))
-outFile.close()
-#+end_src
-
-#+RESULTS:
-
-#+begin_src gnuplot :var datafile="results/agg_contests.txt" :file results/contests.png :exports results
-  reset
-  set terminal pngcairo size 1200,800 enhanced font 'Verdana,12'
-  set output
-
-  set title "Comparison by Category"
-  set xlabel "Category"
-  set ylabel "Value"
-  set key outside
-
-  set style data histogram
-  set style histogram cluster gap 1
-  set style fill solid border -1
-  set boxwidth 0.9
-
-  set xtics rotate by -45 right
-  set xtics nomirror
-  set auto x
-
-  plot datafile using 2:xtic(1) title 'Total Bounty' lt rgb "red", '' using 3 title 'Total HRF' lt rgb "blue", '' using 4 title 'Avg Participants' lt rgb "green"
-#+end_src
-
-#+RESULTS:
-[[file:results/contests.png]]
-
-#+CAPTION: Comparison by Category
-[[file:results/contest.png][contests aggregate data]]
 
 ** Results
 

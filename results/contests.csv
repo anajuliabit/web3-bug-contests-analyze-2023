@@ -1,24 +1,24 @@
-platform,category,contest,bounty,hrf,participants,date
-code4rena,dao,[[https://code4rena.com/reports/2023-08-arbitrum][arbitrum security council election system]],90500,1,39,2023-09
-code4rena,dao,[[https://code4rena.com/reports/2023-06-llama][llama]],60500,2,50,2023-07
-code4rena,cdp,[[https://code4rena.com/reports/2023-06-lybra][lybra finance]],60500,8,136,2023-08
-code4rena,dexes,[[https://code4rena.com/reports/2023-05-maia][maia dao ecosystem]],300500,35,85,2023-05
-code4arena,yield,[[https://code4rena.com/reports/2023-07-pooltogether#wardens][pooltogether]],121650,9,117,2023-07
-code4rena,yield,[[https://code4rena.com/reports/2023-08-pooltogether][pooltogether v5: part deux]],42000,2,45,2023-08
-sherlock,lending,[[https://audits.sherlock.xyz/contests/75][ajna update]],85600,6,155,2023-06
-sherlock,yield agreggator,[[https://audits.sherlock.xyz/contests/41][blueberry]],72500,10,284,2023-02
-sherlock,options,[[https://audits.sherlock.xyz/contests/99][bond options]],23600,2,153,2023-07
-sherlock,lending,[[https://audits.sherlock.xyz/contests/107][cooler update]],17000,4,170,2023-08
-sherlock,dexes,[[https://audits.sherlock.xyz/contests/97][gfx labs]],20400,2,106,2023-07
-sherlock,derivatives,[[https://audits.sherlock.xyz/contests/74][gmx]],200000,5,220,2023-04
-sherlock,lending,[[https://audits.sherlock.xyz/contests/84][iron bank]],67400,1,271,2023-05
-sherlock,derivatives,[[https://audits.sherlock.xyz/contests/79][perennial]],122000,1,220,2023-05
-sherlock,derivatives,[[https://audits.sherlock.xyz/contests/106][perennial v2]],125200,6,252,2023-07
-sherlock,derivatives,[[https://audits.sherlock.xyz/contests/85][symmetrical]],91000,8,233,2023-06
-sherlock,launchpad,[[https://audits.sherlock.xyz/contests/100][tokensoft]],21400,1,221,2023-07
-sherlock,decentralized stablecoin,[[https://audits.sherlock.xyz/contests/73][unitas protocol]],36400,1,208,2023-06
-code4arena,rwa,[[https://code4rena.com/contests/2023-01-ondo-finance-contest][ondo finance]],60500,1,74,2023-01
-sherlock,indexes,[[https://audits.sherlock.xyz/contests/81][index coop]],130600,2,283,2023-05
-sherlock,decentralized stablecoin,[[https://audits.sherlock.xyz/contests/82][ussd]],18200,3,224,2023-05
-sherlock,rwa,[[https://audits.sherlock.xyz/contests/98][dinari]],16000,1,176,2023-07
+PLATFORM,CATEGORY,CONTEST,BOUNTY,HRF,PARTICIPANTS,DATE
+Code4rena,Dao,[[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum security council election system]],90500,1,39,2023-09
+Code4rena,Dao,[[https://code4rena.com/reports/2023-06-llama][Llama]],60500,2,50,2023-07
+Code4rena,Cdp,[[https://code4rena.com/reports/2023-06-lybra][lybra finance]],60500,8,136,2023-08
+Code4rena,Dexes,[[https://code4rena.com/reports/2023-05-maia][Maia dao ecosystem]],300500,35,85,2023-05
+Code4arena,Yield,[[https://code4rena.com/reports/2023-07-pooltogether#wardens][Pooltogether]],121650,9,117,2023-07
+Code4rena,Yield,[[https://code4rena.com/reports/2023-08-pooltogether][Pooltogether v5: part deux]],42000,2,45,2023-08
+Sherlock,Lending,[[https://audits.sherlock.xyz/contests/75][Ajna update]],85600,6,155,2023-06
+Sherlock,Yield agreggator,[[https://audits.sherlock.xyz/contests/41][Blueberry]],72500,10,284,2023-02
+Sherlock,Options,[[https://audits.sherlock.xyz/contests/99][Bond options]],23600,2,153,2023-07
+Sherlock,Lending,[[https://audits.sherlock.xyz/contests/107][Cooler update]],17000,4,170,2023-08
+Sherlock,Dexes,[[https://audits.sherlock.xyz/contests/97][Gfx labs]],20400,2,106,2023-07
+Sherlock,Derivatives,[[https://audits.sherlock.xyz/contests/74][Gmx]],200000,5,220,2023-04
+Sherlock,Lending,[[https://audits.sherlock.xyz/contests/84][Iron bank]],67400,1,271,2023-05
+Sherlock,Derivatives,[[https://audits.sherlock.xyz/contests/79][Perennial]],122000,1,220,2023-05
+Sherlock,Derivatives,[[https://audits.sherlock.xyz/contests/106][Perennial v2]],125200,6,252,2023-07
+Sherlock,Derivatives,[[https://audits.sherlock.xyz/contests/85][Symmetrical]],91000,8,233,2023-06
+Sherlock,Launchpad,[[https://audits.sherlock.xyz/contests/100][Tokensoft]],21400,1,221,2023-07
+Sherlock,Stablecoin,[[https://audits.sherlock.xyz/contests/73][Unitas protocol]],36400,1,208,2023-06
+Code4arena,Rwa,[[https://code4rena.com/contests/2023-01-ondo-finance-contest][Ondo finance]],60500,1,74,2023-01
+Sherlock,Indexes,[[https://audits.sherlock.xyz/contests/81][Index coop]],130600,2,283,2023-05
+Sherlock,Stablecoin,[[https://audits.sherlock.xyz/contests/82][USSD]],18200,3,224,2023-05
+Sherlock,Rwa,[[https://audits.sherlock.xyz/contests/98][Dinari]],16000,1,176,2023-07
 totals,,,1749484,111,169.18182,
