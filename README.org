@@ -1,6 +1,6 @@
 * Solidity common vulnerabilities
 
-This repository contains a [[./dataset.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
+This repository contains a [[./results/bugs.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
 
 ** Contests
 
@@ -10,8 +10,8 @@ The contests analyzed were the following:
 |------------+------------------+-------------------------------------------+---------+-----+--------------+---------|
 | Code4rena  | DAO              | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum security council election system]] |   90500 |   1 |           39 | 2023-09 |
 | Code4rena  | DAO              | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |   60500 |   2 |           50 | 2023-07 |
-| Code4rena  | Cdp              | [[https://code4rena.com/reports/2023-06-lybra][lybra finance]]                             |   60500 |   8 |          136 | 2023-08 |
-| Code4rena  | Dexes            | [[https://code4rena.com/reports/2023-05-maia][Maia dao ecosystem]]                        |  300500 |  35 |           85 | 2023-05 |
+| Code4rena  | Cdp              | [[https://code4rena.com/reports/2023-06-lybra][Lybra finance]]                             |   60500 |   8 |          136 | 2023-08 |
+| Code4rena  | Dexes            | [[https://code4rena.com/reports/2023-05-maia][Maia DAO ecosystem]]                        |  300500 |  35 |           85 | 2023-05 |
 | Code4arena | Yield            | [[https://code4rena.com/reports/2023-07-pooltogether#wardens][Pooltogether]]                              |  121650 |   9 |          117 | 2023-07 |
 | Code4rena  | Yield            | [[https://code4rena.com/reports/2023-08-pooltogether][Pooltogether v5: part deux]]                |   42000 |   2 |           45 | 2023-08 |
 | Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/75][Ajna update]]                               |   85600 |   6 |          155 | 2023-06 |
@@ -19,7 +19,7 @@ The contests analyzed were the following:
 | Sherlock   | Options          | [[https://audits.sherlock.xyz/contests/99][Bond options]]                              |   23600 |   2 |          153 | 2023-07 |
 | Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/107][Cooler update]]                             |   17000 |   4 |          170 | 2023-08 |
 | Sherlock   | Dexes            | [[https://audits.sherlock.xyz/contests/97][Gfx labs]]                                  |   20400 |   2 |          106 | 2023-07 |
-| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/74][Gmx]]                                       |  200000 |   5 |          220 | 2023-04 |
+| Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/74][GMX]]                                       |  200000 |   5 |          220 | 2023-04 |
 | Sherlock   | Lending          | [[https://audits.sherlock.xyz/contests/84][Iron bank]]                                 |   67400 |   1 |          271 | 2023-05 |
 | Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/79][Perennial]]                                 |  122000 |   1 |          220 | 2023-05 |
 | Sherlock   | Derivatives      | [[https://audits.sherlock.xyz/contests/106][Perennial v2]]                              |  125200 |   6 |          252 | 2023-07 |
@@ -30,9 +30,11 @@ The contests analyzed were the following:
 | Sherlock   | Indexes          | [[https://audits.sherlock.xyz/contests/81][Index coop]]                                |  130600 |   2 |          283 | 2023-05 |
 | Sherlock   | Stablecoin       | [[https://audits.sherlock.xyz/contests/82][USSD]]                                      |   18200 |   3 |          224 | 2023-05 |
 | Sherlock   | RWA              | [[https://audits.sherlock.xyz/contests/98][Dinari]]                                    |   16000 |   1 |          176 | 2023-07 |
+| Sherlock   | Dexes            | [[https://audits.sherlock.xyz/contests/88][RealWagmi]]                                 |   33200 |   5 |          203 | 2023-06 |
+| Sherlock   | Dexes            | [[https://audits.sherlock.xyz/contests/89][DODO v3]]                                   |   57800 |   7 |          151 | 2023-06 |
 |------------+------------------+-------------------------------------------+---------+-----+--------------+---------|
-| TOTALS     |                  |                                           | 1783450 | 111 |    169.18182 |         |
-#+tblfm: @24$4=vsum(@2$4..@-1$4)::@24$5=vsum(@2$5..@-1$5)::@24$6=vmean(@2$6..@-1$6)
+| TOTALS     |                  |                                           | 1874450 | 123 |    169.83333 |         |
+#+tblfm: @26$4=vsum(@2$4..@-1$4)::@26$5=vsum(@2$5..@-1$5)::@26$6=vmean(@2$6..@-1$6)
 
 
 *** Labels
@@ -62,30 +64,7 @@ The contests analyzed were the following:
 | C15      |      1 |    11.000000 |
 | O        |      8 |     4.625000 |
 
-#+begin_src gnuplot :var data=results :file output.png :exports results
-  reset
-  set terminal pngcairo size 1200,800 enhanced font 'Verdana,12'
-  set output
-
-  set title "Category Data"
-  set xlabel "Category"
-  set ylabel "Totals"
-  set key outside
-
-  set style data histogram
-  set style histogram cluster gap 1
-  set style fill solid border -1
-  set boxwidth 0.9
-
-  set xtics rotate by -45 right
-  set xtics nomirror
-  set xtics ( 'C01' 0, 'C02' 1, 'C03' 2, 'C04' 3, 'C05' 4, 'C06' 5, 'C07' 6, 'C08' 7, 'C09' 8, 'C10' 9, 'C11' 10, 'C12' 11, 'C13' 12, 'C14' 13, 'C15' 14, 'O' 15 )
-
-  plot data using 2:xtic(1) title columnheader lt rgb "red", '' using 3 title columnheader lt rgb "blue"
-#+end_src
-
-#+RESULTS:
-[[file:output.png]]
+]
 
 ** Findings
 
