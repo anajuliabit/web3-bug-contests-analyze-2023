@@ -36,44 +36,34 @@ The contests analyzed were the following:
 | Code4rena | DAO               | [[https://code4rena.com/reports/2023-07-nounsdao][Nouns DAO]]                                 |  100000 |   1 |   9098 |           36 | 2023-07 |
 | Sherlock  | Dexes             | [[https://audits.sherlock.xyz/contests/89][DODO v3]]                                   |   57800 |   5 |   2079 |          151 | 2023-06 |
 | Sherlock  | Derivatives       | [[https://audits.sherlock.xyz/contests/72][Hubble Exchange]]                           |   60000 |   3 |   1945 |          148 | 2023-06 |
-| Code4rena | Algo-Stables      | [[https://code4rena.com/contests/2023-06-angle-protocol-invitational][Angle Protocol]]                            |   52500 |   3 |   2276 |            5 | 2023-07 |
+| Code4rena | Stablecoin        | [[https://code4rena.com/contests/2023-06-angle-protocol-invitational][Angle Protocol]]                            |   52500 |   3 |   2276 |            5 | 2023-07 |
 | Code4rena | Liquidity manager | [[https://audits.sherlock.xyz/contests/86][Arrakis]]                                   |   81400 |   2 |   2801 |          247 | 2023-06 |
 | Sherlock  | Dexes             | [[https://audits.sherlock.xyz/contests/95][Unstoppable]]                               |   36400 |   8 |   2035 |          130 | 2023-06 |
 |-----------+-------------------+-------------------------------------------+---------+-----+--------+--------------+---------|
 | TOTALS    |                   |                                           | 2255950 | 145 | 3095.1 |    157.32258 |         |
 #+tblfm: @33$4=vsum(@2$4..@-1$4)::@33$5=vsum(@2$5..@-1$5)::@33$6=vmean(@2$6..@-1$6)::@33$7=vmean(@2$7..@-1$7)
 
-
 *** Labels
 - HRF: High Risk Findings
 - nSLOC: Source lines of code number
 
 
-** Results
-
-#+tblname: results
-#+NAME: results
-| Category | Totals | Avg Auditors |
-|----------+--------+--------------|
-| C01      |      9 |     9.777778 |
-| C02      |      1 |     2.000000 |
-| C03      |     14 |     4.785714 |
-| C04      |      1 |    12.000000 |
-| C05      |      8 |    13.000000 |
-| C06      |     26 |     4.115385 |
-| C07      |     15 |     6.600000 |
-| C08      |      1 |     1.000000 |
-| C09      |      4 |     3.750000 |
-| C10      |      5 |     1.600000 |
-| C11      |      1 |     6.000000 |
-| C12      |      2 |     8.500000 |
-| C13      |      1 |     4.000000 |
-| C14      |      2 |     9.000000 |
-| C15      |      1 |    11.000000 |
-| O        |      8 |     4.625000 |
-
-
-
 ** Findings
 
 - Contract implementation-specific bugs are more difficult to be found.
+- Number of auditors who finds the same bug mean is about 5.34, with a range from 1 to 39. Most values are between 2 and 7.
+- What type of vulnerability is most difficult to be found by auditors?
+  + Common Patterns: The 'Derivatives' and 'Yield' categories seem to have a mix of vulnerabilities, with Erroneous state updates (C03) and Wrong Math (C06) being quite common. This could suggest that these types of protocols are susceptible to a variety of vulnerabilities.
+  + Outliers: Broken business logic (C07) seems to be more frequent in 'Yield Aggregator' compared to other categories. Privilege escalation and access control issues (C05) is highly prevalent in 'Decentralized Stablecoin', making it an outlier.
+  + Dominant Classes: Erroneous state updates (C03) and Wrong Math (C06) appear to be dominant across multiple categories, suggesting these vulnerabilities are common in general.
+  + Sparse Classes: Classes like Lack of signature replay protection (C09), Missing check (C10), and Contract implementation-specific bugs (C08) appear less frequently, indicating that they might be specific to certain protocol types or harder to find.
+  + Frequency Counts: The height of the bars indicates the frequency. For example, Erroneous state updates (C03) has a high frequency in the 'Derivatives' category, indicating it's a common issue there.
+- What category of protocol tends to have the most bugs?
+  + 55 bugs were found in Dexes protocols
+  + Derivatives category had 25 bugs classified
+- Which classification was more present?
+  + 36 bugs were classified as Wrong Math (C06)
+  + 30 bugs were classified as Broken business logic (C07)
+  + 19 bugs were classified as Erroneous state updates (C03)
+  + 11 bugs were classified as Missing Check (C10)
+- What is the relationship between categories of bugs and different types of protocols?

@@ -69,19 +69,19 @@ Sherlock,DODO,Dexes,2,Calls to liquidate don't write down totalBorrows which bre
 Sherlock,DODO,Dexes,4,"Anyone can sell other users' tokens as fromToken, and get the toToken's themselves due to decodeData.payer is never checked.",[[https://github.com/sherlock-audit/2023-06-dodo-judging/issues/106][Github]],C05
 Sherlock,DODO,Dexes,4,"A user can get more dTokens than they should get via D3VaultFunding.userDeposit(), due to accounting issues in liquidate()",[[https://github.com/sherlock-audit/2023-06-dodo-judging/issues/211][Github]],C03
 Sherlock,DODO,Dexes,10,"When a D3MM pool repays all of the borrowed funds to vault using repayAll, an attacker can steal double the amount of those funds",[[https://github.com/sherlock-audit/2023-06-dodo-judging/issues/217][Github]],C06
-Sherlock,Arrakis,Liquidity manager,2,Pool deviation check in SimpleManager on rebalance can be bypassed,[[https://github.com/sherlock-audit/2023-06-arrakis-judging/issues/26][Github]],C07
-Sherlock,Arrakis,Liquidity manager,13,ArrakisV2Router#addLiquidityPermit2 will strand ETH,[[https://github.com/sherlock-audit/2023-06-arrakis-judging/issues/183][Github]],C07
-Code4rena,Angle Protocol,Algo-Stables,2,Possible reentray during redepmtion/swap,[[https://code4rena.com/reports/2023-06-angle#h-01-possible-reentrancy-during-redemptionswap][Github]],C02
-Code4rena,Angle Protocol,Algo-Stables,3,The first disputer might lose funds although his dispute is valid,[[https://github.com/code-423n4/2023-06-angle-findings/issues/23][Github]],C01
-Code4rena,Angle Protocol,Algo-Stables,2,Poor detection of disputed trees allows claiming tokens from a disputed tree,[[https://github.com/code-423n4/2023-06-angle-findings/issues/10][Github]],C10
+Sherlock,Arrakis,Liquidity Manager,2,Pool deviation check in SimpleManager on rebalance can be bypassed,[[https://github.com/sherlock-audit/2023-06-arrakis-judging/issues/26][Github]],C07
+Sherlock,Arrakis,Liquidity Manager,13,ArrakisV2Router#addLiquidityPermit2 will strand ETH,[[https://github.com/sherlock-audit/2023-06-arrakis-judging/issues/183][Github]],C07
+Code4rena,Angle Protocol,Stablecoin,2,Possible reentray during redepmtion/swap,[[https://code4rena.com/reports/2023-06-angle#h-01-possible-reentrancy-during-redemptionswap][Github]],C02
+Code4rena,Angle Protocol,Stablecoin,3,The first disputer might lose funds although his dispute is valid,[[https://github.com/code-423n4/2023-06-angle-findings/issues/23][Github]],C01
+Code4rena,Angle Protocol,Stablecoin,2,Poor detection of disputed trees allows claiming tokens from a disputed tree,[[https://github.com/code-423n4/2023-06-angle-findings/issues/10][Github]],C10
 Sherlock,RealWagmi,Dexes,12,Wrong calculation of tickCumulatives due to hardcoded pool fees,[[https://github.com/sherlock-audit/2023-06-real-wagmi-judging/issues/48][Github]],C04
 Sherlock,RealWagmi,Dexes,2,No slippage protection when withdrawing and providing liquidity in rebalanceAll,[[https://github.com/sherlock-audit/2023-06-real-wagmi-judging/issues/94][Github]],C07
 Sherlock,RealWagmi,Dexes,12,Usage of slot0 is extremely easy to manipulate,[[https://github.com/sherlock-audit/2023-06-real-wagmi-judging/issues/97][Github]],C01
 Sherlock,RealWagmi,Dexes,1,Deposit transactions lose funds to front-running when multiple fee tiers are available,[[https://github.com/sherlock-audit/2023-06-real-wagmi-judging/issues/105][Github]],C01
 Sherlock,RealWagmi,Dexes,3,"_estimateWithdrawalLp function might return a very large value, result in users losing significant incentives or being unable to withdraw",[[https://github.com/sherlock-audit/2023-06-real-wagmi-judging/issues/142][Github]],C06
-Sherlock,USSD,Decentralized Stablecoin,32,Price calculation susceptible to flashloan exploits,[[https://github.com/sherlock-audit/2023-05-USSD-judging/issues/451][Github]],C01
-Sherlock,USSD,Decentralized Stablecoin,14,The getOwnValuation() function contains errors in the price calculation,[[https://solodit.xyz/issues/h-3-the-getownvaluation-function-contains-errors-in-the-price-calculation-sherlock-none-ussd-autonomous-secure-dollar-git][Github]],C06
-Sherlock,USSD,Decentralized Stablecoin,9,"Uniswap v3 pool token balance proportion does not necessarily correspond to the price, and it is easy to manipulate.",[[Source: https://github.com/sherlock-audit/2023-05-USSD-judging/issues/808][Github]],C06
+Sherlock,USSD,Stablecoin,32,Price calculation susceptible to flashloan exploits,[[https://github.com/sherlock-audit/2023-05-USSD-judging/issues/451][Github]],C01
+Sherlock,USSD,Stablecoin,14,The getOwnValuation() function contains errors in the price calculation,[[https://solodit.xyz/issues/h-3-the-getownvaluation-function-contains-errors-in-the-price-calculation-sherlock-none-ussd-autonomous-secure-dollar-git][Github]],C06
+Sherlock,USSD,Stablecoin,9,"Uniswap v3 pool token balance proportion does not necessarily correspond to the price, and it is easy to manipulate.",[[Source: https://github.com/sherlock-audit/2023-05-USSD-judging/issues/808][Github]],C06
 Code4rena,Lybra Finance,CDP,1,Making `_totalSupply` and `_totalShares` imbalance significantly by providing fake income leads to stealing fund,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C07
 Code4rena,Lybra Finance,CDP,1,The Constructor Caveat leads to bricking of Configurator contract.,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C03
 Code4rena,Lybra Finance,CDP,10,vulnerability in the `executeFlashloan` function of the `PeUSDMainnet` contract. Hackers can burn other people's eUSD token balance without permission,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C07
@@ -135,7 +135,7 @@ Code4rena,Maia DAO Ecosystem,Dexes,1,Incorrectly reading the offset from the rec
 Code4rena,Maia DAO Ecosystem,Dexes,1,BaseV2Minter DAO reward shares are calculated wrong,[[https://github.com/code-423n4/2023-05-maia-findings/issues/169][Github]],C06
 Code4rena,Maia DAO Ecosystem,Dexes,6,Cross-chain messaging via Anycall will fail,[[https://github.com/code-423n4/2023-05-maia-findings/issues/91][Github]],C07
 Code4rena,Maia DAO Ecosystem,Dexes,7,Rerange/rebalance should not use protocolFee as asset for adding liquidity,[[https://github.com/code-423n4/2023-05-maia-findings/issues/80][Github]],C03
-Sherlock,Unitas Protocol,Decentralized stablecoin,7,Unitas swap function is vulnerable to Sandwich Attack at oracle price update,[[https://github.com/sherlock-audit/2023-04-unitasprotocol-judging/issues/67][Github]],C01
+Sherlock,Unitas Protocol,Stablecoin,7,Unitas swap function is vulnerable to Sandwich Attack at oracle price update,[[https://github.com/sherlock-audit/2023-04-unitasprotocol-judging/issues/67][Github]],C01
 Sherlock,Iron bank,Lending,3,supplyNativeToken will strand ETH in contract if called after ACTION_DEFER_LIQUIDITY_CHECK,[[https://github.com/sherlock-audit/2023-05-ironbank-judging/issues/361][Github]],C07
 Code4rena,Llama,DAO,5,governance result might be incorrect as it counts the wrong approval/disapproval,[[https://github.com/code-423n4/2023-06-llama-findings/issues/203][Github]],C06
 Code4rena,Llama,DAO,3,Anyone can change approval/disapproval threshold for any action using LlamaRelativeQuorum strategy,[[https://github.com/code-423n4/2023-06-llama-findings/issues/62][Github]],C05

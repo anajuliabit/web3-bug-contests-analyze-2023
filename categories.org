@@ -12,8 +12,8 @@
 - C05: Privilege escalation and access control issues.
   + Privileged functions can be called by anyone or at any time.
   + User funds can get locked due to missing/wrong withdraw code
-- C06: Wrong Math / Erroneous accounting.
-  Wrong Math refers to a potential issue where mathematical operations within a smart contract are implemented incorrectly, leading to inaccurate calculations.
+- C06: Wrong Math
+    Refers to a potential issue where mathematical operations within a smart contract are implemented incorrectly, leading to inaccurate calculations.
   + Incorrect calculating order.
   + Returning an unexpected value that deviates from the expected semantics specified for the contract.
   + Calculations performed with incorrect numbers (e.g., x = a + b ==> x = a + c, incorrect precisions).
@@ -24,7 +24,8 @@
  + Unexpected or missing function invocation sequences (e.g., external calls to dependent contracts,  exploitable sequences leading to malicious fund reallocation or manipulation).
  + Unexpected environment or contract conditions (e.g., ChainLink returning outdated data or significant slippage occurring).
  + Unexpected function arguments.
-- C08: Contract implementation-specific bugs. These bugs are difficult to categorize into others categories.
+- C08: Contract implementation-specific bugs.
+  These bugs are difficult to categorize into others categories.
 - C09: Lack of signature replay protection, e.g missing nonce, hash collision
 - C10: Missing check.
     Missing Check refers to a critical oversight in a smart contract's code where a necessary condition or validation is not properly implemented.
@@ -48,9 +49,8 @@ would typically be reserved for vulnerabilities that directly arise from mishand
 - Indexes: Protocols that have a way to track/created the performance of a group of related assets
 - Dexes: Protocols where you can swap/trade cryptocurrency
 - RWA: Protocols that involve Real World Assets, such as house tokenization
-- Algo-Stables: Protocols that provide algorithmic coins to stablecoins
 - CDP: Protocols that mint its own stablecoin using collateralized lending
-- Stablecoin: Coins pegged to USD through decentralized mechanisms
+- Stablecoin: Coins pegged to USD/EUR through decentralized mechanisms
 - Liquidity manager: Protocols that manage Liquidity Positions in concentrated liquidity AMMs
 - Lending: Protocols that allow users to borrow and lend assets
 

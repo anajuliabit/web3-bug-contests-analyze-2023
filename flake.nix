@@ -3,15 +3,17 @@
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-  outputs = { self, nixpkgs }: {
-    devShell.aarch64-darwin = (import nixpkgs { }).mkShell {
-      buildInputs = [
-        nixpkgs.python3
-        nixpkgs.python3Packages.pip
-        nixpkgs.python3Packages.pandas
-        nixpkgs.python3Packages.matplotlib
-        nixpkgs.python3Packages.seaborn
-      ];
+  outputs = { self, nixpkgs }:
+    let pkgs = import nixpkgs { system = "aarch64-darwin"; };
+    in {
+      devShell.aarch64-darwin = pkgs.mkShell {
+        buildInputs = [
+          pkgs.python3
+          pkgs.python3Packages.pip
+          pkgs.python3Packages.pandas
+          pkgs.python3Packages.matplotlib
+          pkgs.python3Packages.seaborn
+        ];
+      };
     };
-  };
 }
