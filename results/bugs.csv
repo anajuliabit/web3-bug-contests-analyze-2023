@@ -10,6 +10,16 @@ Sherlock,Blueberry,Yield Agreggator,2,CurveTricryptoOracle incorrectly assumes t
 Sherlock,Blueberry,Yield Agreggator,2,CurveTricryptoOracle#getPrice contains math error that causes LP to be priced completely wrong,[[https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/100][Github]],C06
 Sherlock,Blueberry,Yield Agreggator,1,CVX/AURA distribution calculation is incorrect and will lead to loss of rewards at the end of each cliff,[[https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/240][Github]],C06
 Sherlock,Blueberry,Yield Agreggator,1,wrong bToken's exchangeRateStored used for calculate ColleteralValue,[[https://github.com/sherlock-audit/2023-07-blueberry-judging/issues/117][Github]],C06
+Sherlock,Blueberry,Yield Agreggator,6,BlueBerryBank#withdrawLend will cause underlying token accounting error if soft/hard vault has withdraw fee,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/33][Github]],C03
+Sherlock,Blueberry,Yield Agreggator,14,Interest component of underlying amount is not withdrawable using the withdrawLend function. Such amount is permanently locked in the BlueBerryBank contract,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/109][Github]],C07
+Sherlock,Blueberry,Yield Agreggator,1,Users can be liquidated prematurely because calculation understates value of underlying position,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/126][Github]],C06
+Sherlock,Blueberry,Yield Agreggator,7,Liquidator can take all collateral and underlying tokens for a fraction of the correct price,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/127][Github]],C06
+Sherlock,Blueberry,Yield Agreggator,7,Users can get around MaxLTV because of lack of strategyId validation,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/129][Github]],C10
+Sherlock,Blueberry,Yield Agreggator,14,LP tokens are not sent back to withdrawing user,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/151][Github]],C07
+Sherlock,Blueberry,Yield Agreggator,8,Users who deposit extra funds into their Ichi farming positions will lose all their ICHI rewards,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/158][Github]],C07
+Sherlock,Blueberry,Yield Agreggator,2,Too few ICHI v2 farming reward tokens transferred to the user due to incorrect decimal precision,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/319][Github]],C06
+Sherlock,Blueberry,Yield Agreggator,7,IchiLpOracle is extemely easy to manipulate due to how IchiVault calculates underlying token balances,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/20][Github]],C01
+Sherlock,Blueberry,Yield Agreggator,3,Fail to accrue interests on multiple token posi,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/140][Github]],C07
 Code4rena,Arbitrum Foundation,DAO,3,Signatures can be replayed in `castVoteWithReasonAndParamsBySig()` to use up more votes than a user intended,[[https://code4rena.com/reports/2023-08-arbitrum][Code4rena]],C09
 Code4rena,PoolTogether,Yield,1,Too many rewards are distributed when a draw is closed,[[https://code4rena.com/reports/2023-08-pooltogether][Code4rena]],C06
 Code4rena,PoolTogether,Yield,16,rngComplete function should only be called by rngAuctionRelayer,[[https://code4rena.com/reports/2023-08-pooltogether][Code4rena]],C05
@@ -32,6 +42,7 @@ Code4rena,PoolTogether,Yield,8,Resetting delegation will result in user funds be
 Code4rena,PoolTogether,Yield,3,`_requireVaultCollateralized()` is called at the beginning of the functions `mintYieldFee()` and `liquidate()`,[[https://solodit.xyz/issues/h-07--is-called-at-the-beginning-of-the-functions-mintyieldfee-and-liquidate-code4rena-pooltogether-pooltogether-git][Solodit]],C07
 Code4rena,PoolTogether,Yield,5,Increasing reserves breaks ProzePool accounting,[[https://solodit.xyz/issues/h-08-increasing-reserves-breaks-prizepool-accounting-code4rena-pooltogether-pooltogether-git][Solodit]],C03
 Code4rena,PoolTogether,Yield,2,`Vault` is not compatible with some ERC4626 vaults,[[https://solodit.xyz/issues/h-09-vault-is-not-compatible-with-some-erc4626-vaults-code4rena-pooltogether-pooltogether-git][Solodit]],C07
+Code4rena,PoolTogether,Yield,2,The _currentExchangeRate of the Vault contract can’t increase and will always be lower than or equal to _assetUnit,[[https://github.com/code-423n4/2023-07-pooltogether-findings/issues/443][Github]],C07
 Sherlock,Dinari,RWA,4,Bypass the blacklist restriction because the blacklist check is not done when minting or burning,[[https://github.com/sherlock-audit/2023-06-dinari-judging/issues/64][Github]],C13
 Sherlock,Unstopabble,Dexes,1,Wrong accounting of the storage balances results for the protocol to be in debt even when the bad debt is repaid,[[https://github.com/sherlock-audit/2023-06-unstoppable-judging/issues/68][Github]],O
 Sherlock,Unstopabble,Dexes,1,reduce_margin_by_amount in Vault.reduce_position is wrongly calculated,[[https://github.com/sherlock-audit/2023-06-unstoppable-judging/issues/85][Github]],O
@@ -71,7 +82,6 @@ Sherlock,RealWagmi,Dexes,3,"_estimateWithdrawalLp function might return a very l
 Sherlock,USSD,Decentralized Stablecoin,32,Price calculation susceptible to flashloan exploits,[[https://github.com/sherlock-audit/2023-05-USSD-judging/issues/451][Github]],C01
 Sherlock,USSD,Decentralized Stablecoin,14,The getOwnValuation() function contains errors in the price calculation,[[https://solodit.xyz/issues/h-3-the-getownvaluation-function-contains-errors-in-the-price-calculation-sherlock-none-ussd-autonomous-secure-dollar-git][Github]],C06
 Sherlock,USSD,Decentralized Stablecoin,9,"Uniswap v3 pool token balance proportion does not necessarily correspond to the price, and it is easy to manipulate.",[[Source: https://github.com/sherlock-audit/2023-05-USSD-judging/issues/808][Github]],C06
-Sherlock,Blueberry,Yield Agreggator,7,IchiLpOracle is extemely easy to manipulate,[[https://github.com/sherlock-audit/2023-02-blueberry-judging/issues/20][Github]],C01
 Code4rena,Lybra Finance,CDP,1,Making `_totalSupply` and `_totalShares` imbalance significantly by providing fake income leads to stealing fund,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C07
 Code4rena,Lybra Finance,CDP,1,The Constructor Caveat leads to bricking of Configurator contract.,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C03
 Code4rena,Lybra Finance,CDP,10,vulnerability in the `executeFlashloan` function of the `PeUSDMainnet` contract. Hackers can burn other people's eUSD token balance without permission,[[https://code4rena.com/reports/2023-06-lybra][Code4rena]],C07
@@ -87,12 +97,12 @@ Sherlock,Ajna,Lending,1,"settlement can be called when auction period isn't conc
 Sherlock,Ajna,Lending,2,"LUP is not recalculated after adding kicking penalty to pool's debt, so kick() updates the pool state with an outdated LUP",[[https://github.com/sherlock-audit/2023-04-ajna-judging/issues/107][Github]],C06
 Sherlock,Ajna,Lending,1,Debt write off can be prohibited by HPB depositor by continuously allocating settlement blocking dust deposits in the higher buckets,[[https://github.com/sherlock-audit/2023-04-ajna-judging/issues/110][Github]],C10
 Sherlock,Perennial,Derivatives,3,BalancedVault.sol: loss of funds + global settlement flywheel / user settlement flywheels getting out of sync,[[https://github.com/sherlock-audit/2023-05-perennial-judging/issues/45][Github]],C03
-Sherlock,Index,Indexes,6,eMode implementation is completely broken,[[https://github.com/sherlock-audit/2023-05-Index-judging/issues/251][Github]],C07
-Sherlock,Index,Indexes,1,_calculateMaxBorrowCollateral calculates repay incorrectly and can lead to set token liquidation,[[https://github.com/sherlock-audit/2023-05-Index-judging/issues/254][Github]],C06
-Code4rena,Ondo,RWA,6,loss of user funds when completing CASH redemptions,[[https://code4rena.com/reports/2023-01-ondo#h-01-loss-of-user-funds-when-completing-cash-redemptions][Code4rena]],C03
+Sherlock,Index coop,Indexes,6,eMode implementation is completely broken,[[https://github.com/sherlock-audit/2023-05-Index-judging/issues/251][Github]],C07
+Sherlock,Index coop,Indexes,1,_calculateMaxBorrowCollateral calculates repay incorrectly and can lead to set token liquidation,[[https://github.com/sherlock-audit/2023-05-Index-judging/issues/254][Github]],C06
+Code4rena,Ondo Finance,RWA,6,loss of user funds when completing CASH redemptions,[[https://code4rena.com/reports/2023-01-ondo#h-01-loss-of-user-funds-when-completing-cash-redemptions][Code4rena]],C03
 Code4rena,Maia DAO Ecosystem,Dexes,7,Use of `slot0` to get `sqrtPriceLimitX96` can lead to price manipulation.,[[https://solodit.xyz/issues/h-02-use-of-slot0-to-get-sqrtpricelimitx96-can-lead-to-price-manipulation-code4rena-maia-dao-ecosystem-maia-dao-ecosystem-git][Solodit]],C01
 Code4rena,Maia DAO Ecosystem,Dexes,7,"if a STRATEGY TOKEN is ""Toggled off"" STRATEGIES will still be able to withdraw but returning of tokens with replenishReserves will be disabled. #882",[[https://github.com/code-423n4/2023-05-maia-findings/issues/882][Github]],C10
-Code4rena,Maia DAO Ecosystem,Dexes,8,setWeight() Logic error,[[https://github.com/code-423n4/2023-05-maia-findings/issues/766][Github]],C6
+Code4rena,Maia DAO Ecosystem,Dexes,8,setWeight() Logic error,[[https://github.com/code-423n4/2023-05-maia-findings/issues/766][Github]],C06
 Code4rena,Maia DAO Ecosystem,Dexes,1,"MIN_FALLBACK_RESERVE (in BranchBridgeAgent) doesn’t consider the actual gas consumption in AnyCall contracts, which lets the user underpay the actual cost when replenishing the execution budget",[[https://github.com/code-423n4/2023-05-maia-findings/issues/764][Github]],C04
 Code4rena,Maia DAO Ecosystem,Dexes,13,Multiple issues with decimal scaling will cause incorrect accounting of hTokens and underlying tokens,[[https://github.com/code-423n4/2023-05-maia-findings/issues/758][Github]],C06
 Code4rena,Maia DAO Ecosystem,Dexes,3,withdrawProtocolFees() Possible malicious or accidental withdrawal of all rewards,[[https://github.com/code-423n4/2023-05-maia-findings/issues/731][Github]],C10
@@ -132,4 +142,6 @@ Code4rena,Llama,DAO,3,Anyone can change approval/disapproval threshold for any a
 Sherlock,GMX,Derivatives,1,"MarketUtils.getPoolValueInfo() does not use !maximize when evaluating impactPoolUsd, leading to wrong logic of maximizing or minimizing the pool value.",[[https://github.com/sherlock-audit/2023-04-gmx-judging/issues/160][Github]],C06
 Sherlock,GMX,Derivatives,3,Pool amount adjustments for collateral decreases aren't undone if swaps are successful,[[https://github.com/sherlock-audit/2023-04-gmx-judging/issues/235][Github]],C03
 Sherlock,GMX,Derivatives,1,Swaps associated with position orders will use the wrong price,[[https://github.com/sherlock-audit/2023-04-gmx-judging/issues/240][Github]],C06
+Sherlock,GMX,Derivatives,4,initialCollateralDeltaAmount is incorrectly interpreted as a USD value when calculating estimated remaining collateral,[[https://github.com/sherlock-audit/2023-04-gmx-judging/issues/249][Github]],C06
+Sherlock,GMX,Derivatives,3,Limit swap orders can be used to get a free look into the future,[[https://github.com/sherlock-audit/2023-04-gmx-judging/issues/241][Github]],C07
 TOTALS,,,6.0202020,,,
