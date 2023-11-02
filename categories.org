@@ -49,8 +49,7 @@ would typically be reserved for vulnerabilities that directly arise from mishand
 - Indexes: Protocols that have a way to track/created the performance of a group of related assets
 - Dexes: Protocols where you can swap/trade cryptocurrency
 - RWA: Protocols that involve Real World Assets, such as house tokenization
-- CDP: Protocols that mint its own stablecoin using collateralized lending
-- Stablecoin: Coins pegged to USD/EUR through decentralized mechanisms
+- Stablecoin: Coins pegged to USD/EUR through decentralized mechanisms (such as using collateralized lending)
 - Liquidity manager: Protocols that manage Liquidity Positions in concentrated liquidity AMMs
 - Lending: Protocols that allow users to borrow and lend assets
 

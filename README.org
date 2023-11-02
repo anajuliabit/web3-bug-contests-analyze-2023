@@ -10,7 +10,7 @@ The contests analyzed were the following:
 |-----------+-------------------+-------------------------------------------+---------+-----+--------+--------------+---------|
 | Code4rena | DAO               | [[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum security council election system]] |   90500 |   1 |   2184 |           39 | 2023-09 |
 | Code4rena | DAO               | [[https://code4rena.com/reports/2023-06-llama][Llama]]                                     |   60500 |   2 |   2096 |           50 | 2023-07 |
-| Code4rena | CDP               | [[https://code4rena.com/reports/2023-06-lybra][Lybra finance]]                             |   60500 |   8 |   1762 |          136 | 2023-08 |
+| Code4rena | Stablecoin        | [[https://code4rena.com/reports/2023-06-lybra][Lybra finance]]                             |   60500 |   8 |   1762 |          136 | 2023-08 |
 | Code4rena | Dexes             | [[https://code4rena.com/reports/2023-05-maia][Maia DAO ecosystem]]                        |  300500 |  35 |  10997 |           85 | 2023-05 |
 | Code4rena | Yield             | [[https://code4rena.com/reports/2023-07-pooltogether#wardens][PoolTogether]]                              |  121650 |   9 |   3324 |          117 | 2023-07 |
 | Code4rena | Yield             | [[https://code4rena.com/reports/2023-08-pooltogether][PoolTogether v5: part deux]]                |   42000 |   2 |   1001 |           45 | 2023-08 |
@@ -49,21 +49,19 @@ The contests analyzed were the following:
 
 
 ** Findings
-
-- Contract implementation-specific bugs are more difficult to be found.
-- Number of auditors who finds the same bug mean is about 5.34, with a range from 1 to 39. Most values are between 2 and 7.
-- What type of vulnerability is most difficult to be found by auditors?
-  + Common Patterns: The 'Derivatives' and 'Yield' categories seem to have a mix of vulnerabilities, with Erroneous state updates (C03) and Wrong Math (C06) being quite common. This could suggest that these types of protocols are susceptible to a variety of vulnerabilities.
-  + Outliers: Broken business logic (C07) seems to be more frequent in 'Yield Aggregator' compared to other categories. Privilege escalation and access control issues (C05) is highly prevalent in 'Decentralized Stablecoin', making it an outlier.
+  - What type of vulnerability is most difficult to be found by auditors?
+  - Contract implementation-specific bugs (C8), followed by C02, C10 are respectively the most difficult bug type to spot
+    The easiest ones are C05, C14, C01
   + Dominant Classes: Erroneous state updates (C03) and Wrong Math (C06) appear to be dominant across multiple categories, suggesting these vulnerabilities are common in general.
   + Sparse Classes: Classes like Lack of signature replay protection (C09), Missing check (C10), and Contract implementation-specific bugs (C08) appear less frequently, indicating that they might be specific to certain protocol types or harder to find.
-  + Frequency Counts: The height of the bars indicates the frequency. For example, Erroneous state updates (C03) has a high frequency in the 'Derivatives' category, indicating it's a common issue there.
-- What category of protocol tends to have the most bugs?
-  + 55 bugs were found in Dexes protocols
-  + Derivatives category had 25 bugs classified
-- Which classification was more present?
-  + 36 bugs were classified as Wrong Math (C06)
-  + 30 bugs were classified as Broken business logic (C07)
-  + 19 bugs were classified as Erroneous state updates (C03)
-  + 11 bugs were classified as Missing Check (C10)
-- What is the relationship between categories of bugs and different types of protocols?
+ - What category of protocol tends to have the most bugs?
+    + 55 bugs were found in Dexes protocols
+    + Derivatives category had 25 bugs classified
+ -  Which classification was more present?
+    + 36 bugs were classified as Wrong Math (C06)
+    + 30 bugs were classified as Broken business logic (C07)
+    + 19 bugs were classified as Erroneous state updates (C03)
+    + 11 bugs were classified as Missing Check (C10)
+ -  What is the relationship between categories of bugs and different types of protocols?
+    + Broken business logic (C07) are the most frequent bugs classification found in Dexes, Derivatives, Yield Agreggator, and Stablecoins
+    + Arrays (C14) and Wrong Math (C06) are the second most common type of bugs found in Dexes

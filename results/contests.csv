@@ -1,7 +1,7 @@
 PLATFORM,CATEGORY,CONTEST,BOUNTY,HRF,nSLOC,PARTICIPANTS,DATE
 Code4rena,DAO,[[https://code4rena.com/reports/2023-08-arbitrum][Arbitrum security council election system]],90500,1,2184,39,2023-09
 Code4rena,DAO,[[https://code4rena.com/reports/2023-06-llama][Llama]],60500,2,2096,50,2023-07
-Code4rena,CDP,[[https://code4rena.com/reports/2023-06-lybra][Lybra finance]],60500,8,1762,136,2023-08
+Code4rena,Stablecoin,[[https://code4rena.com/reports/2023-06-lybra][Lybra finance]],60500,8,1762,136,2023-08
 Code4rena,Dexes,[[https://code4rena.com/reports/2023-05-maia][Maia DAO ecosystem]],300500,35,10997,85,2023-05
 Code4rena,Yield,[[https://code4rena.com/reports/2023-07-pooltogether#wardens][PoolTogether]],121650,9,3324,117,2023-07
 Code4rena,Yield,[[https://code4rena.com/reports/2023-08-pooltogether][PoolTogether v5: part deux]],42000,2,1001,45,2023-08
