@@ -38,6 +38,50 @@
       \verb https://www.tandfonline.com/doi/epdf/10.1080/03088839.2020.1825855?needAccess=true
       \endverb
     \endentry
+    \entry{Code4renaKeepingHigh}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Code4rena | {{Keeping}} High Severity Bugs out of Production}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/9JT72ETD/code4rena.com.html
+      \endverb
+      \verb{urlraw}
+      \verb https://code4rena.com/
+      \endverb
+      \verb{url}
+      \verb https://code4rena.com/
+      \endverb
+    \endentry
+    \entry{CryptocurrencyStatistics20232023}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cryptocurrency is an extremely high-risk and complex investment. Don't invest unless you're prepared to lose all the money you invest. You are unlikely to be protected if something goes wrong.Forbes Advisor has provided this content for educational reasons only and not to help you decide whether or}
+      \field{chapter}{Cryptocurrency}
+      \field{journaltitle}{Forbes Advisor Australia}
+      \field{langid}{american}
+      \field{month}{9}
+      \field{title}{Cryptocurrency {{Statistics}} 2023}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/JVFSST8Y/cryptocurrency-statistics.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.forbes.com/advisor/au/investing/cryptocurrency/cryptocurrency-statistics/
+      \endverb
+      \verb{url}
+      \verb https://www.forbes.com/advisor/au/investing/cryptocurrency/cryptocurrency-statistics/
+      \endverb
+    \endentry
     \entry{EthereumWhitepaper}{misc}{}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
@@ -74,6 +118,90 @@
       \verb https://www.bitcoininsider.org/article/211488/heres-how-much-was-lost-crypto-hacks-and-exploits-q1-2023
       \endverb
     \endentry
+    \entry{JCPFreeFullText}{misc}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{title}{{{JCP}} | {{Free Full-Text}} | {{The State}} of {{Ethereum Smart Contracts Security}}: {{Vulnerabilities}}, {{Countermeasures}}, and {{Tool Support}}}
+      \field{urlday}{2}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/8X3VGYNA/19.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2624-800X/2/2/19
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2624-800X/2/2/19
+      \endverb
+    \endentry
+    \entry{JudgingCriteria}{misc}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Judging Criteria}
+      \field{urlday}{2}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/TWY6TG6B/judging-criteria.html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.code4rena.com/awarding/judging-criteria\#estimating-risk
+      \endverb
+      \verb{url}
+      \verb https://docs.code4rena.com/awarding/judging-criteria%5C#estimating-risk
+      \endverb
+    \endentry
+    \entry{nakamotoBitcoinPeertoPeerElectronic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.}
+      \field{langid}{english}
+      \field{title}{Bitcoin: {{A Peer-to-Peer Electronic Cash System}}}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/K9U2BB7I/Nakamoto - Bitcoin A Peer-to-Peer Electronic Cash System.pdf
+      \endverb
+    \endentry
+    \entry{Sherlock}{misc}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sherlock covers protocols against smart contract hacks directly so users don't need to worry.}
+      \field{title}{Sherlock}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/KLE55VK9/www.sherlock.xyz.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sherlock.xyz/
+      \endverb
+      \verb{url}
+      \verb https://www.sherlock.xyz/
+      \endverb
+    \endentry
     \entry{SmartContractsMarket}{misc}{}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
@@ -92,6 +220,44 @@
       \verb https://www.grandviewresearch.com/industry-analysis/smart-contracts-market-report
       \endverb
     \endentry
+    \entry{SoliditySolidity22}{misc}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Solidity —{} {{Solidity}} 0.8.22 Documentation}
+      \field{urlday}{2}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/3WWK55WD/v0.8.22.html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.soliditylang.org/en/v0.8.22/
+      \endverb
+      \verb{url}
+      \verb https://docs.soliditylang.org/en/v0.8.22/
+      \endverb
+    \endentry
+    \entry{Solodit_contentReport_tagsMd}{misc}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Solodit\_content/Report\_tags.Md at Main {$\cdot$} Solodit/Solodit\_content}
+      \field{urlday}{6}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/DSBR3PIK/report_tags.html
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/solodit/solodit\_content/blob/main/report\_tags.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/solodit/solodit%5C_content/blob/main/report%5C_tags.md
+      \endverb
+    \endentry
     \entry{TechnologyTippingPoints}{misc}{}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
@@ -108,16 +274,134 @@
       \verb https://www3.weforum.org/docs/WEF%5C_GAC15%5C_Technological%5C_Tipping%5C_Points%5C_report%5C_2015.pdf
       \endverb
     \endentry
+    \entry{timeMostInterestingWeb32023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9d95e78682944272f286f060f50a9786}{%
+           family={Time},
+           familyi={T\bibinitperiod},
+           given={Johnny},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d95e78682944272f286f060f50a9786}
+      \strng{fullhash}{9d95e78682944272f286f060f50a9786}
+      \strng{bibnamehash}{9d95e78682944272f286f060f50a9786}
+      \strng{authorbibnamehash}{9d95e78682944272f286f060f50a9786}
+      \strng{authornamehash}{9d95e78682944272f286f060f50a9786}
+      \strng{authorfullhash}{9d95e78682944272f286f060f50a9786}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this exclusive interview, we sit down with Peter Kacherginsky, the Team Lead at ``Unit 0x'' at Coinbase, and a true expert in the field.}
+      \field{journaltitle}{Medium}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{The {{Most Interesting Web3 Security Interview}} with {{Peter Kacherginsky}}}
+      \field{urlday}{13}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@JohnnyTime/the-most-interesting-web3-security-interview-with-peter-kacherginsky-cc03b0a30930
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@JohnnyTime/the-most-interesting-web3-security-interview-with-peter-kacherginsky-cc03b0a30930
+      \endverb
+    \endentry
+    \entry{woodETHEREUMSECUREDECENTRALISED}{article}{}
+      \name{author}{1}{}{%
+        {{hash=11a65a2786fdfb7c4db11a639c0b0326}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Dr\bibnamedelima Gavin},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \strng{fullhash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \strng{bibnamehash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \strng{authorbibnamehash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \strng{authornamehash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \strng{authorfullhash}{11a65a2786fdfb7c4db11a639c0b0326}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The blockchain paradigm when coupled with cryptographically-secured transactions has demonstrated its utility through a number of projects, not least Bitcoin. Each such project can be seen as a simple application on a decentralised, but singleton, compute resource. We can call this paradigm a transactional singleton machine with shared-state.}
+      \field{langid}{english}
+      \field{title}{{{ETHEREUM}}: {{A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER}}}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/ZQYKS3U2/Wood - ETHEREUM A SECURE DECENTRALISED GENERALISED TRANS.pdf
+      \endverb
+      \keyw{yellowpaper}
+    \endentry
+    \entry{zhangDemystifyingExploitableBugs2023a}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=884df7ab45641d489531d7b9dba66003}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhuo},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a2182f47f4763230d56f9703af321eca}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=481b6495d57ddcbc1be6959267e853e5}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3a0fad1a4b2365ac32b3fc6cb8579eb2}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Melbourne, Australia}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0511407700aa5a04c89a8fe1bf142c11}
+      \strng{fullhash}{566393db0709ee8006adcfd4bfe3b48d}
+      \strng{bibnamehash}{0511407700aa5a04c89a8fe1bf142c11}
+      \strng{authorbibnamehash}{0511407700aa5a04c89a8fe1bf142c11}
+      \strng{authornamehash}{0511407700aa5a04c89a8fe1bf142c11}
+      \strng{authorfullhash}{566393db0709ee8006adcfd4bfe3b48d}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exploitable bugs in smart contracts have caused significant monetary loss. Despite the substantial advances in smart contract bug finding, exploitable bugs and real-world attacks are still trending. In this paper we systematically investigate 516 unique real-world smart contract vulnerabilities in years 2021-2022, and study how many can be exploited by malicious users and cannot be detected by existing analysis tools. We further categorize the bugs that cannot be detected by existing tools into seven types and study their root causes, distributions, difficulties to audit, consequences, and repair strategies. For each type, we abstract them to a bug model (if possible), facilitating finding similar bugs in other contracts and future automation. We leverage the findings in auditing real world smart contracts, and so far we have been rewarded with \$102,660 bug bounties for identifying 15 critical zero-day exploitable bugs, which could have caused up to \$22.52 millions monetary loss if exploited.}
+      \field{booktitle}{2023 {{IEEE}}/{{ACM}} 45th {{International Conference}} on {{Software Engineering}} ({{ICSE}})}
+      \field{isbn}{978-1-66545-701-9}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Demystifying {{Exploitable Bugs}} in {{Smart Contracts}}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{615\bibrangedash 627}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/ICSE48619.2023.00061
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/SRGKFWS8/Zhang et al. - 2023 - Demystifying Exploitable Bugs in Smart Contracts.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10172700/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10172700/
+      \endverb
+    \endentry
   \enddatalist
-  \missing{Code4renaKeepingHigh}
-  \missing{CryptocurrencyStatistics20232023}
-  \missing{JCPFreeFullText}
-  \missing{JudgingCriteria}
-  \missing{Sherlock}
-  \missing{SoliditySolidity22}
   \missing{SolidityVulnerabilities}
-  \missing{nakamotoBitcoinPeertoPeerElectronic}
-  \missing{woodETHEREUMSECUREDECENTRALISED}
 \endrefsection
 \endinput
 
