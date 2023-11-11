@@ -47,54 +47,28 @@ The contests analyzed were the following:
 - HRF: High Risk Findings
 - nSLOC: Source lines of code number
 
-** Findings
-- Which type of vulnerability is most difficult for auditors to find?
-The vulnerabilities that are more difficult to spot are those related to
-contract implementation-specific bugs (C8), followed by C02 and C10. On the
-other hand, the easiest ones to identify are C05, C14, and C01.
+** Data analyze
+- Identifying vulnerabilities in smart contract systems is a crucial task that requires a high level of expertise. In this regard, auditors face certain challenges in uncovering specific types of vulnerabilities. Of the various types of vulnerabilities, those related to contract implementation-specific bugs (C8), followed by C02 and C10, are particularly difficult to spot. Conversely, C05, C14, and C01 are the easiest to identify.
+- Erroneous state updates (C03), privilege escalation and access control issues (C05), and wrong math (C06) are the dominant classes of vulnerabilities across multiple categories. This suggests that these vulnerability types are common in general. Specifically, erroneous state updates are found in eight categories, while privilege escalation and access control issues (C05) and wrong math (C06) appear in seven categories.
+- Certain classes of vulnerabilities appear less frequently, indicating that they may be specific to certain protocol types or more challenging to find. For example, classes such as lack of signature replay protection (C09), missing check (C10), and contract implementation-specific bugs (C08) are sparse.
+- Different protocol categories have different vulnerability profiles. Dexes protocols had the highest number of identified bugs, with 47 classified, followed by Derivatives with 25 and Aggregator and Stablecoin with 15 each.
+- Wrong math (C06) is the most frequent classification across all categories, with 36 bugs classified as such. Broken business logic (C07) is the second most frequent classification, with 31 identified bugs. Erroneous state updates (C03) and missing check (C10) follow with 19 and 11 bugs classified, respectively. Finally, 10 bugs were classified as Mempool Manipulation / Front-Running Vulnerabilities (C01).
+- The relationship between vulnerability categories and different protocol types is complex. Wrong math (C06) is the most frequent classification found in Derivatives, Yield Aggregator, and Stablecoins, while Broken business logic (C07) is the most frequent classification found in Dexes and Yield. Additionally, arrays (C14) and wrong math (C06) are the second most common type of bugs found in Dexes.
 
-- What are the dominant classes of vulnerabilities? Erroneous state updates
-  (C03), privilege escalation and access control issues (C05), and wrong math
-  (C06) are the dominant classes of vulnerabilities across multiple categories.
-  This suggests that these vulnerability types are common in general.
-  Specifically, erroneous state updates are found in eight categories, while
-  privilege escalation and access control issues (C05) and wrong math (C06)
-  appear in seven categories.
-
-- What are the sparse classes of vulnerabilities?
-Classes such as lack of signature replay protection (C09), missing check (C10),
-and contract implementation-specific bugs (C08) appear less frequently,
-indicating that they may be specific to certain protocol types or more
-challenging to find.
-
-- Which category of protocol tends to have the most bugs?
-There were 55 bugs found in Dexes protocols, while the Derivatives category had
-25 bugs classified.
-
-- Which classification of vulnerabilities was more frequent?
-36 bugs were classified as wrong math (C06), 30 bugs were classified as broken
-business logic (C07), 19 bugs were classified as erroneous state updates (C03),
-and 11 bugs were classified as missing check (C10).
-
-- What is the relationship between categories of bugs and different types of
-  protocols?
-Wrong math (C06) is the most frequent classification found in Derivatives, Yield
-Aggregator, and Stablecoins. Broken business logic (C07) is the most frequent
-classification found in Dexes and Yield. Finally, arrays (C14) and wrong math
-(C06) are the second most common type of bugs found in Dexes.
-  - What category of protocol tends to have the most bugs?
-    + 55 bugs were found in Dexes protocols
-    + The Derivatives category had 25 bugs classified
-  - Which classification was more present?
-    + 36 bugs were classified as Wrong Math (C06)
-    + 30 bugs were classified as Broken business logic (C07)
-    + 19 bugs were classified as Erroneous state updates (C03)
-    + 11 bugs were classified as Missing Check (C10)
-  - What is the relationship between categories of bugs and different types of
-    protocols?
-    + Wrong Math (C06) is the most frequent classification found in Derivatives,
-      Yield Agreggator, and Stablecoins
-    + Broken business logic (C07) is the most frequent classification found in
-      Dexes and Yield
-    + Arrays (C14) and Wrong Math (C06) are the second most common type of bugs
-      found in Dexes
+** Research questions
+1. Why are Contract Implementation-Specific Bugs (C08) More Challenging to Identify?
+   This question aims to explore the underlying factors that make specific bugs, particularly C08 and C02, harder to identify by auditors.
+2. What Makes Certain Vulnerabilities Easier to Detect?
+   Focusing on vulnerabilities like C05, C14, and C01, this question seeks to understand the characteristics that make them more apparent to auditors.
+3. Are Common Vulnerabilities Across Protocol Categories Indicative of Systemic Issues?
+   Investigating why erroneous state updates (C03), privilege escalation (C05), and wrong math (C06) are common across various categories could reveal broader systemic issues in smart contract design.
+4. What Factors Contribute to the Rarity of Certain Vulnerability Classes?
+   Looking at less frequent vulnerabilities like C09, C10, and C08, this question probes into why these classes are less common, exploring if they are protocol-specific or inherently difficult to detect.
+5. How Do Different Protocol Categories Influence the Profile of Vulnerabilities?
+   This question aims to understand the relationship between protocol categories (like Dexes, Derivatives, Aggregators, and Stablecoins) and the prevalence of different types of vulnerabilities.
+6. Why is 'Wrong Math' (C06) the Most Frequent Vulnerability Across Categories?
+   Given the high frequency of C06 bugs, this question seeks to explore the reasons behind its prevalence in different protocol types.
+7. What Drives the Variation in Bug Types Across Different Protocols?
+   This question would investigate why certain bugs like C07 and C06 are more prevalent in specific protocols (like Dexes and Yield Aggregators) compared to others.
+8. How Do Vulnerability Profiles Vary Between High-Risk and Lower-Risk Protocols?
+   Exploring how vulnerability profiles differ between protocols with high numbers of identified bugs (like Dexes) and those with fewer bugs could reveal risk factors and mitigation strategies.
