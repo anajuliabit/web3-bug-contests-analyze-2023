@@ -1,0 +1,4 @@
+* Todo
+
+* References
+- [[https://wp.hacken.io/wp-content/uploads/2023/10/Protecting-WEB3-Q3-report.pdf?utm_source=substack&utm_medium=email][2023 Security Insights]]

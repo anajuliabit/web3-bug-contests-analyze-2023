@@ -38,6 +38,57 @@
       \verb https://www.tandfonline.com/doi/epdf/10.1080/03088839.2020.1825855?needAccess=true
       \endverb
     \endentry
+    \entry{chenBlockchainDisruptionDecentralized2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b6f25c2ea695f4385f6acab832194dfc}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=58975a1a3cd807c9212c66c26fe88af0}{%
+           family={Bellavitis},
+           familyi={B\bibinitperiod},
+           given={Cristiano},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{99e41eaf635b981a524ca1167110b547}
+      \strng{fullhash}{99e41eaf635b981a524ca1167110b547}
+      \strng{bibnamehash}{99e41eaf635b981a524ca1167110b547}
+      \strng{authorbibnamehash}{99e41eaf635b981a524ca1167110b547}
+      \strng{authornamehash}{99e41eaf635b981a524ca1167110b547}
+      \strng{authorfullhash}{99e41eaf635b981a524ca1167110b547}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Blockchain technology can reduce transaction costs, generate distributed trust, and empower decentralized platforms, potentially becoming a new foundation for decentralized business models. In the financial industry, blockchain technology allows for the rise of decentralized financial services, which tend to be more decentralized, innovative, interoperable, borderless, and transparent. Empowered by blockchain technology, decentralized financial services have the potential to broaden financial inclusion, facilitate open access, encourage permissionless innovation, and create new opportunities for entrepreneurs and innovators. In this article, we assess the benefits of decentralized finance, identify existing business models, and evaluate potential challenges and limits. As a new area of financial technology, decentralized finance may reshape the structure of modern finance and create a new landscape for entrepreneurship and innovation, showcasing the promises and challenges of decentralized business models.}
+      \field{issn}{2352-6734}
+      \field{journaltitle}{Journal of Business Venturing Insights}
+      \field{month}{6}
+      \field{shorttitle}{Blockchain Disruption and Decentralized Finance}
+      \field{title}{Blockchain Disruption and Decentralized Finance: {{The}} Rise of Decentralized Business Models}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{e00151}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.jbvi.2019.e00151
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/DKBA5ZJJ/S2352673419300824.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352673419300824
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352673419300824
+      \endverb
+      \keyw{Blockchain,Decentralization,Decentralized finance,Decentralized platform,FinTech}
+    \endentry
     \entry{Code4renaKeepingHigh}{misc}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -102,6 +153,74 @@
       \endverb
       \keyw{whitepaper}
     \endentry
+    \entry{gramlichMultivocalLiteratureReview2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=764b95c07bd181a3f695894aa8cbac81}{%
+           family={Gramlich},
+           familyi={G\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c8e03f21b4646c70f976709b0e8e8008}{%
+           family={Guggenberger},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2407d9d87d9328d481e2c1eda953dc53}{%
+           family={Principato},
+           familyi={P\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dc3bf2f1a7f5ad601a74eaa3dabdf3e2}{%
+           family={Schellinger},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=244a2736a3187909b68e97d657f8add4}{%
+           family={Urbach},
+           familyi={U\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bc930eeda091a9022571f6810e2e66a}
+      \strng{fullhash}{f35f593b743ba288103ecdbcd5acd174}
+      \strng{bibnamehash}{4bc930eeda091a9022571f6810e2e66a}
+      \strng{authorbibnamehash}{4bc930eeda091a9022571f6810e2e66a}
+      \strng{authornamehash}{4bc930eeda091a9022571f6810e2e66a}
+      \strng{authorfullhash}{f35f593b743ba288103ecdbcd5acd174}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{While decentralized finance (DeFi) has the potential to emulate and, indeed, outperform existing financial systems, it remains a complex phenomenon yet to be extensively researched. To make the most of this potential, its practitioners must gain a rigorous understanding of its intricacies, as must information systems (IS) researchers. Against this background, this study uses a multivocal literature review to capture the state of research in DeFi. Thereby, we (1) present a consolidating definition of DeFi as we (2) analyze, synthesize, and discuss the current state of knowledge in the field of DeFi. We do so while adapting the blockchain research framework proposed by (Risius and Spohrer, Business \& Information Systems Engineering 59:385–409, 2017). Furthermore, we (3) identify gaps in the literature and indicate future research directions in DeFi. Even though our findings highlight several shortcomings in DeFi that have prevented its widespread adoption, our literature review shows a large consensus on DeFi's many promising features and potential to complement the traditional financial system. To that end, this paper is presented to encourage further research to mitigate the current risks of DeFi, the payoff of which will be an enriched financial ecosystem.}
+      \field{issn}{1422-8890}
+      \field{journaltitle}{Electronic Markets}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shorttitle}{A Multivocal Literature Review of Decentralized Finance}
+      \field{title}{A Multivocal Literature Review of Decentralized Finance: {{Current}} Knowledge and Future Research Avenues}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{33}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{11}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s12525-023-00637-4
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/PYC3TR8Y/Gramlich et al. - 2023 - A multivocal literature review of decentralized fi.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12525-023-00637-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12525-023-00637-4
+      \endverb
+      \keyw{Blockchain,Crypto Finance,DeFi,G15,G23,Literature review,O33,O34,Research agenda,Smart contracts}
+    \endentry
     \entry{HereHowMuch}{misc}{}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
@@ -157,6 +276,61 @@
       \verb https://docs.code4rena.com/awarding/judging-criteria%5C#estimating-risk
       \endverb
     \endentry
+    \entry{meyerDecentralizedFinanceSystematic2022}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=d4608db105cf46d99fc8dc50400d9b9a}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=39520a845d8881062421934a51d77c4d}{%
+           family={Welpe},
+           familyi={W\bibinitperiod},
+           given={Isabell\bibnamedelima M.},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d85e1d8b4c718e79ed38e2a9475b2dd4}{%
+           family={Sandner},
+           familyi={S\bibinitperiod},
+           given={Philipp\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{9db21b33c623af71d0b9f4df26507b07}
+      \strng{fullhash}{9db21b33c623af71d0b9f4df26507b07}
+      \strng{bibnamehash}{9db21b33c623af71d0b9f4df26507b07}
+      \strng{authorbibnamehash}{9db21b33c623af71d0b9f4df26507b07}
+      \strng{authornamehash}{9db21b33c623af71d0b9f4df26507b07}
+      \strng{authorfullhash}{9db21b33c623af71d0b9f4df26507b07}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Decentralized Finance (DeFi) is the (r)evolutionary movement to create a solely code-based, intermediary-independent financial system—a movement which has grown from \$4bn to \$104bn in assets locked in the last three years. We present the first systematic literature review of the yet fragmented DeFi research field. By identifying, analyzing, and integrating 83 peer-reviewed DeFi-related publications, our results contribute fivefold. First, we confirm the increasing growth of academic DeFi publications through systematic analysis. Second, we frame DeFi-related literature into three levels of abstraction (micro, meso, and macro) and seven subcategories. Third, we identify Ethereum as the blockchain in main academic focus. Fourth, we show that prototyping is the dominant research method applied whereas only one paper has used primary research data. Fifth, we derive four prioritized research avenues, namely concerning i) DeFi protocol interaction and aggregation platforms, ii) decentralized off-chain data integration to DeFi, iii) DeFi agents, and iv) regulation.}
+      \field{langid}{english}
+      \field{number}{4016497}
+      \field{title}{Decentralized {{Finance}}—{{A Systematic Literature Review}} and {{Research Directions}}}
+      \field{type}{{{SSRN Scholarly Paper}}}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.4016497
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/JDEQ2JUS/Meyer et al. - 2022 - Decentralized Finance—A Systematic Literature Revi.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=4016497
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=4016497
+      \endverb
+      \keyw{Blockchain,Decentralized Finance,DeFi,Literature Review,Research Directions}
+    \endentry
     \entry{nakamotoBitcoinPeertoPeerElectronic}{article}{}
       \name{author}{1}{}{%
         {{hash=1977190f018b398e43ede3de043de8ea}{%
@@ -180,6 +354,45 @@
       \field{title}{Bitcoin: {{A Peer-to-Peer Electronic Cash System}}}
       \verb{file}
       \verb /Users/anajulia/Zotero/storage/K9U2BB7I/Nakamoto - Bitcoin A Peer-to-Peer Electronic Cash System.pdf
+      \endverb
+    \endentry
+    \entry{scharDecentralizedFinanceBlockchain}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e71f1627560989b3c9412016047f4f6e}{%
+           family={Schär},
+           familyi={S\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e71f1627560989b3c9412016047f4f6e}
+      \strng{fullhash}{e71f1627560989b3c9412016047f4f6e}
+      \strng{bibnamehash}{e71f1627560989b3c9412016047f4f6e}
+      \strng{authorbibnamehash}{e71f1627560989b3c9412016047f4f6e}
+      \strng{authornamehash}{e71f1627560989b3c9412016047f4f6e}
+      \strng{authorfullhash}{e71f1627560989b3c9412016047f4f6e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The term decentralized finance (DeFi) refers to an alternative financial infrastructure built on top of the Ethereum blockchain. DeFi uses smart contracts to create protocols that replicate existing financial services in a more open, interoperable, and transparent way. This article highlights opportunities and potential risks of the DeFi ecosystem. I propose a multi-layered framework to analyze the implicit architecture and the various DeFi building blocks, including token standards, decentralized exchanges, decentralized debt markets, blockchain derivatives, and on-chain asset management protocols.}
+      \field{langid}{english}
+      \field{shorttitle}{Decentralized {{Finance}}}
+      \field{title}{Decentralized {{Finance}}: {{On Blockchain-}} and {{Smart Contract-Based Financial Markets}}}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.20955/r.103.153-74
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/5JWHMQW5/Schär - Decentralized Finance On Blockchain- and Smart Co.pdf;/Users/anajulia/Zotero/storage/SWQKNYTL/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets.html
+      \endverb
+      \verb{urlraw}
+      \verb https://research.stlouisfed.org/publications/review/2021/02/05/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets
+      \endverb
+      \verb{url}
+      \verb https://research.stlouisfed.org/publications/review/2021/02/05/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets
       \endverb
     \endentry
     \entry{Sherlock}{misc}{}
@@ -401,6 +614,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{CompetitiveVsPrivate}
+  \missing{DefiLlama}
   \missing{SolidityVulnerabilities}
 \endrefsection
 \endinput

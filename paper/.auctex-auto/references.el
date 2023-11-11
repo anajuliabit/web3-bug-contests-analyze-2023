@@ -17,6 +17,10 @@
     "Solodit_contentReport_tagsMd"
     "timeMostInterestingWeb32023"
     "JudgingCriteria"
-    "JCPFreeFullText"))
+    "JCPFreeFullText"
+    "scharDecentralizedFinanceBlockchain"
+    "meyerDecentralizedFinanceSystematic2022"
+    "gramlichMultivocalLiteratureReview2023"
+    "chenBlockchainDisruptionDecentralized2020"))
  '(or :bibtex :latex))
 

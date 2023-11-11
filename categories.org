@@ -21,23 +21,22 @@
   + Underflow/overflow
 - C07: Broken business logic
     Logic vulnerabilities involve flaws in the business logic or protocols of a smart contract, where the implementation matches the developer's intention, but the underlying logic is inherently flawed.
- + Unexpected or missing function invocation sequences (e.g., external calls to dependent contracts,  exploitable sequences leading to malicious fund reallocation or manipulation).
- + Unexpected environment or contract conditions (e.g., ChainLink returning outdated data or significant slippage occurring).
- + Unexpected function arguments.
+  + Unexpected or missing function invocation sequences (e.g., external calls to dependent contracts,  exploitable sequences leading to malicious fund reallocation or manipulation).
+  + Unexpected environment or contract conditions (e.g., ChainLink returning outdated data or significant slippage occurring).
+  + Unexpected function arguments.
 - C08: Contract implementation-specific bugs.
   These bugs are difficult to categorize into others categories.
 - C09: Lack of signature replay protection, e.g missing nonce, hash collision
+- C11: DoS
+  Denial of Service (DoS) vulnerabilities occur when an attacker can exploit a contract in a way that makes it unresponsive or significantly less efficient. This category includes cases that are not well described by another class and where the primary consequence is contract shut-down or operational inefficiency.
 - C10: Missing check.
     Missing Check refers to a critical oversight in a smart contract's code where a necessary condition or validation is not properly implemented.
-- C11: lack of segregation between users funds
 - C12: Data validation: Data validation vulnerabilities arise when a smart contract does not adequately verify or sanitize inputs, especially those from untrusted sources. This lack of validation can lead to unintended and potentially harmful consequences within the contract’s operations.
 - C13: Whitelist/Blacklist Match
     Whitelist/Blacklist Match refers to a potential vulnerability where a smart contract improperly handles addresses based on predefined lists.
 - C14: Arrays
   Vulnerabilities related to arrays can arise when developers do not properly handle array indices or fail to validate user inputs.
 would typically be reserved for vulnerabilities that directly arise from mishandling or misinterpreting arrays in the code. For example, if there were out-of-bound reads/writes, deletion mishaps, or issues with array resizing
-- C15: DoS
-  Denial of Service (DoS) vulnerabilities occur when an attacker can exploit a contract in a way that makes it unresponsive or significantly less efficient. This category includes cases that are not well described by another class and where the primary consequence is contract shut-down or operational inefficiency.
 
 * Protocol categories
 - Derivatives: Protocols for betting with leverage
