@@ -30,12 +30,9 @@ bug_count_by_category = df['Protocol Category'].value_counts()
 print("Frequencia por categoria", bug_count_by_category)
 
 # Relação entre o número de auditores e a classificação do bug
-bug_difficulty_revised = df.groupby('Class')['Auditors'].mean().sort_values()
+bug_difficulty = df.groupby('Class')['Auditors'].mean().reset_index()
 
-print("Dificuldade", bug_difficulty_revised)
-
-# Visualization: Set the style
-sns.set(style="whitegrid")
+print("Dificuldade", bug_difficulty)
 
 # Function to add labels on bars
 def add_labels(ax):
@@ -44,29 +41,43 @@ def add_labels(ax):
                     ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
                     textcoords='offset points')
 
+# Gráfico de barras para mostrar a média de auditores por classificação ordenado do maior para o menor
+ax = sns.barplot(x='Class', y='Auditors', data=bug_difficulty, order=bug_difficulty.sort_values('Auditors', ascending=True).Class)
+plt.xlabel('Classificação')
+plt.ylabel('Média de Auditores')
+add_labels(ax)
+plt.title('Média de Auditores por Classificação de Bug')
+
+file_path = 'results/average_auditors_by_class.png'
+plt.savefig(file_path)
+plt.close()
+
+
+
 # Countplot for 'Protocol Category'
-plt.figure(figsize=(14, 6))
+#plt.figure(figsize=(14, 6))
 ax = sns.countplot(data=df, x='Protocol Category', order=df['Protocol Category'].value_counts().index)
 plt.title('Frequência de cada categoria de protocolo')
 plt.xlabel('Categoria de protocolo')
 plt.ylabel('Contagem de bugs')
 add_labels(ax)
 plt.xticks(rotation=45)
-plt.show()
+
+file_path = 'results/bugs_by_protocol_category.png'
+plt.savefig(file_path)
 plt.close()
 
 # Countplot for 'Class'
-plt.figure(figsize=(14, 6))
 ax = sns.countplot(data=df, x='Class', order=df['Class'].value_counts().index)
 plt.title('Frequência de cada classificação')
 plt.xlabel('Classificação')
 plt.ylabel('Contagem de bugs')
 add_labels(ax)
-plt.show()
+file_path = 'results/bugs_by_class.png'
+plt.savefig(file_path)
 plt.close()
 
 # Countplot for 'Protocol Category' with 'Class' as hue
-plt.figure(figsize=(18, 8))
 ax = sns.countplot(data=df, x='Protocol Category', hue='Class', order=df['Protocol Category'].value_counts().index)
 plt.title('Frequency of Each Protocol Category with Class as Hue')
 plt.xlabel('Protocol Category')
@@ -75,5 +86,7 @@ add_labels(ax)
 plt.xticks(rotation=45)
 plt.legend(title='Class', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-plt.show()
+
+file_path = 'results/bugs_by_protocol_category_with_class_as_hue.png'
+plt.savefig(file_path)
 plt.close()
