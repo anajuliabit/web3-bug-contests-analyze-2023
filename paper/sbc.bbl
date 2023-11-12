@@ -19,6 +19,38 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{bittencourtSolidityCommonVulnerabilities2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=51b7a9e213122b3f8bd3450e2297b955}{%
+           family={Bittencourt},
+           familyi={B\bibinitperiod},
+           given={Ana\bibnamedelima Julia},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{51b7a9e213122b3f8bd3450e2297b955}
+      \strng{fullhash}{51b7a9e213122b3f8bd3450e2297b955}
+      \strng{bibnamehash}{51b7a9e213122b3f8bd3450e2297b955}
+      \strng{authorbibnamehash}{51b7a9e213122b3f8bd3450e2297b955}
+      \strng{authornamehash}{51b7a9e213122b3f8bd3450e2297b955}
+      \strng{authorfullhash}{51b7a9e213122b3f8bd3450e2297b955}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Solidity Common Vulnerabilities}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/anajuliabit/solidity-common-vulnerabilities
+      \endverb
+      \verb{url}
+      \verb https://github.com/anajuliabit/solidity-common-vulnerabilities
+      \endverb
+    \endentry
     \entry{BlockchainAdoptionsMaritime}{misc}{}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
@@ -108,6 +140,27 @@
       \verb https://code4rena.com/
       \endverb
     \endentry
+    \entry{CompetitiveVsPrivate}{misc}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Competitive vs private audits? In this article we will thoroughly examine both options based on your business requirement}
+      \field{langid}{english}
+      \field{title}{Competitive vs {{Private Audits}} - {{Pros}} and {{Cons}} | {{The}} Full Comparison}
+      \field{urlday}{9}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/YU45JR9R/competitive-vs-private-audits-comparison.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cyfrin.io/blog/competitive-vs-private-audits-comparison
+      \endverb
+      \verb{url}
+      \verb https://www.cyfrin.io/blog/competitive-vs-private-audits-comparison
+      \endverb
+    \endentry
     \entry{CryptocurrencyStatistics20232023}{misc}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
@@ -131,6 +184,28 @@
       \endverb
       \verb{url}
       \verb https://www.forbes.com/advisor/au/investing/cryptocurrency/cryptocurrency-statistics/
+      \endverb
+    \endentry
+    \entry{DefiLlama}{misc}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DefiLlama is a DeFi TVL aggregator. It is committed to providing accurate data without ads or sponsored content, as well as transparency.}
+      \field{journaltitle}{DefiLlama}
+      \field{langid}{english}
+      \field{title}{{{DefiLlama}}}
+      \field{urlday}{6}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/GDVNXJXP/categories.html
+      \endverb
+      \verb{urlraw}
+      \verb https://defillama.com/categories
+      \endverb
+      \verb{url}
+      \verb https://defillama.com/categories
       \endverb
     \endentry
     \entry{EthereumWhitepaper}{misc}{}
@@ -614,9 +689,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{CompetitiveVsPrivate}
-  \missing{DefiLlama}
-  \missing{SolidityVulnerabilities}
 \endrefsection
 \endinput
 

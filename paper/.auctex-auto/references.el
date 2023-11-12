@@ -21,6 +21,9 @@
     "scharDecentralizedFinanceBlockchain"
     "meyerDecentralizedFinanceSystematic2022"
     "gramlichMultivocalLiteratureReview2023"
-    "chenBlockchainDisruptionDecentralized2020"))
+    "chenBlockchainDisruptionDecentralized2020"
+    "CompetitiveVsPrivate"
+    "DefiLlama"
+    "bittencourtSolidityCommonVulnerabilities2023"))
  '(or :bibtex :latex))
 
