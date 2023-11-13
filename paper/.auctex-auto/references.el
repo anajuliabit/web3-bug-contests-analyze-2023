@@ -24,6 +24,7 @@
     "chenBlockchainDisruptionDecentralized2020"
     "CompetitiveVsPrivate"
     "DefiLlama"
-    "bittencourtSolidityCommonVulnerabilities2023"))
+    "bittencourtSolidityCommonVulnerabilities2023"
+    "TuringCompleteness2023"))
  '(or :bibtex :latex))
 
