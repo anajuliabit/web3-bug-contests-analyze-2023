@@ -55,13 +55,14 @@ plt.close()
 
 
 # Countplot for 'Protocol Category'
-#plt.figure(figsize=(14, 6))
-ax = sns.countplot(data=df, x='Protocol Category', order=df['Protocol Category'].value_counts().index)
-plt.title('Frequência de cada categoria de protocolo')
-plt.xlabel('Categoria de protocolo')
-plt.ylabel('Contagem de bugs')
-add_labels(ax)
-plt.xticks(rotation=45)
+# Contagem de cada categoria de protocolo para o gráfico de pizza
+protocol_category_counts = df['Protocol Category'].value_counts()
+
+# Criando o gráfico de pizza
+plt.figure(figsize=(8, 8))
+plt.pie(protocol_category_counts, labels=protocol_category_counts.index, autopct='%1.1f%%', startangle=140)
+plt.title('Distribuição Percentual por Categoria de Protocolo')
+plt.axis('equal')  # Isso garante que o gráfico de pizza seja um círculo.
 
 file_path = 'results/bugs_by_protocol_category.png'
 plt.savefig(file_path)
@@ -69,7 +70,7 @@ plt.close()
 
 # Countplot for 'Class'
 ax = sns.countplot(data=df, x='Class', order=df['Class'].value_counts().index)
-plt.title('Frequência de cada classificação')
+plt.title('Contagem de Bugs por Classificação')
 plt.xlabel('Classificação')
 plt.ylabel('Contagem de bugs')
 add_labels(ax)
@@ -77,15 +78,25 @@ file_path = 'results/bugs_by_class.png'
 plt.savefig(file_path)
 plt.close()
 
-# Countplot for 'Protocol Category' with 'Class' as hue
-ax = sns.countplot(data=df, x='Protocol Category', hue='Class', order=df['Protocol Category'].value_counts().index)
-plt.title('Frequency of Each Protocol Category with Class as Hue')
-plt.xlabel('Protocol Category')
-plt.ylabel('Count')
-add_labels(ax)
-plt.xticks(rotation=45)
-plt.legend(title='Class', bbox_to_anchor=(1.05, 1), loc='upper left')
-plt.tight_layout()
+
+# Criando o heatmap
+# Usando o 'size' para contar as frequências
+heatmap_data = df.pivot_table(index='Protocol Category', columns='Class', aggfunc='size', fill_value=0)
+
+# Criando o heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(heatmap_data, annot=True, fmt="d", cmap='YlOrRd')
+plt.title('Heatmap da Frequência de Classificações por Categoria de Protocolo')
+plt.xlabel('Classe')
+plt.ylabel('Categoria do Protocolo')
+
+#ax = sns.countplot(data=df, x='Protocol Category', hue='Class', order=df['Protocol Category'].value_counts().index)
+#plt.title('Frequência de Classificação por Categoria de Protocolo')
+#plt.xlabel('Categoria do Protocolo')
+#plt.ylabel('Contagem de bugs')
+#plt.xticks(rotation=45)
+#plt.legend(title='Classe', bbox_to_anchor=(1.05, 1), loc='upper left')
+#plt.tight_layout()
 
 file_path = 'results/bugs_by_protocol_category_with_class_as_hue.png'
 plt.savefig(file_path)
