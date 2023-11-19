@@ -25,6 +25,11 @@
     "CompetitiveVsPrivate"
     "DefiLlama"
     "bittencourtSolidityCommonVulnerabilities2023"
-    "TuringCompleteness2023"))
+    "TuringCompleteness2023"
+    "KEVMCompleteFormal"
+    "hasinADSBBasedAir2021"
+    "ibrahimDDoSAttackPrevention2022"
+    "rupaIndustryEthereumBlockchain2021"
+    "zhangSoKBlockchainDecentralization2023"))
  '(or :bibtex :latex))
 

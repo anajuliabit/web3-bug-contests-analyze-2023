@@ -296,6 +296,63 @@
       \endverb
       \keyw{Blockchain,Crypto Finance,DeFi,G15,G23,Literature review,O33,O34,Research agenda,Smart contracts}
     \endentry
+    \entry{hasinADSBBasedAir2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=04f82af0c9e4962a9f6fd067769b07b3}{%
+           family={Hasin},
+           familyi={H\bibinitperiod},
+           given={Farah},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2dc9da04e62935ab1fb49e2b95c7b2e5}{%
+           family={Munia},
+           familyi={M\bibinitperiod},
+           given={Tahmina\bibnamedelima Haque},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a183f3e29c79be8b8bd6e37342728fbb}{%
+           family={Zumu},
+           familyi={Z\bibinitperiod},
+           given={Nazmun\bibnamedelima Nahar},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e6586c8bb7d253f970171aa5ede47758}{%
+           family={Taher},
+           familyi={T\bibinitperiod},
+           given={Kazi\bibnamedelima Abu},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c4300b73e9115e965937d4fcc51fab8}
+      \strng{fullhash}{7087bd6b9bd3da61e93870d3609a2c47}
+      \strng{bibnamehash}{4c4300b73e9115e965937d4fcc51fab8}
+      \strng{authorbibnamehash}{4c4300b73e9115e965937d4fcc51fab8}
+      \strng{authornamehash}{4c4300b73e9115e965937d4fcc51fab8}
+      \strng{authorfullhash}{7087bd6b9bd3da61e93870d3609a2c47}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study represents a performance model of Automatic Dependent Surveillance-Broadcast (ADS-B) based ATM system using the security features of Ethereum blockchain technology. ADS-B based modernization of ATM is taking place in different parts of the world. ADS-B and other components of upcoming ATM exchange information through an unencrypted data link. More reliability of ATM on data link services caused fear of cyber threat to many aviation specialist and entities. To overcome the security-related concern of ADS-B based ATM, blockchain can be a promising technology. This paper systematically reviews the key concepts and process of Ethereum and Hyperledger blockchain technology and proposed a model using Ethereum blockchain in ATM comparing different key features of blockchain technology which ensures privacy, authenticity and confidentiality to overcome the cyber threat of ADS-B based ATM system. It is found that the proposed Ethereum based blockchain technique provides the opportunity of establishing secured ADS-B based ATM.}
+      \field{booktitle}{2021 {{International Conference}} on {{Information}} and {{Communication Technology}} for {{Sustainable Development}} ({{ICICT4SD}})}
+      \field{month}{2}
+      \field{title}{{{ADS-B Based Air Traffic Management System Using Ethereum Blockchain Technology}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{346\bibrangedash 350}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICICT4SD50815.2021.9396828
+      \endverb
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/5FKD3RIQ/9396828.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9396828
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9396828
+      \endverb
+    \endentry
     \entry{HereHowMuch}{misc}{}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
@@ -312,24 +369,65 @@
       \verb https://www.bitcoininsider.org/article/211488/heres-how-much-was-lost-crypto-hacks-and-exploits-q1-2023
       \endverb
     \endentry
-    \entry{JCPFreeFullText}{misc}{}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+    \entry{ibrahimDDoSAttackPrevention2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8a7afaddb9387e1c852311fcfb028a18}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Rahmeh\bibnamedelima Fawaz},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=603601ae8a032ec3be98a58b918585ef}{%
+           family={{Abu Al-Haija}},
+           familyi={A\bibinitperiod},
+           given={Qasem},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=e4ffea39d0a441ea1231324142c9d200}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Ashraf},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \strng{fullhash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \strng{bibnamehash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \strng{authorbibnamehash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \strng{authornamehash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \strng{authorfullhash}{a47a1e9a614ac7da62fbf03031ff7d26}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{{JCP}} | {{Free Full-Text}} | {{The State}} of {{Ethereum Smart Contracts Security}}: {{Vulnerabilities}}, {{Countermeasures}}, and {{Tool Support}}}
-      \field{urlday}{2}
+      \field{abstract}{The Internet of Things (IoT) has widely expanded due to its advantages in enhancing the business, industrial, and social ecosystems. Nevertheless, IoT infrastructure is susceptible to several cyber-attacks due to the endpoint devices' restrictions in computation, storage, and communication capacity. As such, distributed denial-of-service (DDoS) attacks pose a serious threat to the security of the IoT. Attackers can easily utilize IoT devices as part of botnets to launch DDoS attacks by taking advantage of their flaws. This paper proposes an Ethereum blockchain model to detect and prevent DDoS attacks against IoT systems. Additionally, the proposed system can be used to resolve the single points of failure (dependencies on third parties) and privacy and security in IoT systems. First, we propose implementing a decentralized platform in place of current centralized system solutions to prevent DDoS attacks on IoT devices at the application layer by authenticating and verifying these devices. Second, we suggest tracing and recording the IP address of malicious devices inside the blockchain to prevent them from connecting and communicating with the IoT networks. The system performance has been evaluated by performing 100 experiments to evaluate the time taken by the authentication process. The proposed system highlights two messages with a time of 0.012 ms: the first is the request transmitted from the IoT follower device to join the blockchain, and the second is the blockchain response. The experimental evaluation demonstrated the superiority of our system because there are fewer I/O operations in the proposed system than in other related works, and thus it runs substantially faster.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{18}
+      \field{title}{{{DDoS Attack Prevention}} for {{Internet}} of {{Thing Devices Using Ethereum Blockchain Technology}}}
+      \field{urlday}{19}
       \field{urlmonth}{11}
       \field{urlyear}{2023}
+      \field{volume}{22}
+      \field{year}{2022}
       \field{urldateera}{ce}
+      \field{pages}{6806}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22186806
+      \endverb
       \verb{file}
-      \verb /Users/anajulia/Zotero/storage/8X3VGYNA/19.html
+      \verb /Users/anajulia/Zotero/storage/BNCNCWER/Ibrahim et al. - 2022 - DDoS Attack Prevention for Internet of Thing Devic.pdf
       \endverb
       \verb{urlraw}
-      \verb https://www.mdpi.com/2624-800X/2/2/19
+      \verb https://www.mdpi.com/1424-8220/22/18/6806
       \endverb
       \verb{url}
-      \verb https://www.mdpi.com/2624-800X/2/2/19
+      \verb https://www.mdpi.com/1424-8220/22/18/6806
       \endverb
+      \keyw{authorization,blockchain,DDoS attacks,Ethereum,IoT,smart contract}
     \endentry
     \entry{JudgingCriteria}{misc}{}
       \field{sortinit}{J}
@@ -351,60 +449,24 @@
       \verb https://docs.code4rena.com/awarding/judging-criteria%5C#estimating-risk
       \endverb
     \endentry
-    \entry{meyerDecentralizedFinanceSystematic2022}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=d4608db105cf46d99fc8dc50400d9b9a}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Eva},
-           giveni={E\bibinitperiod}}}%
-        {{hash=39520a845d8881062421934a51d77c4d}{%
-           family={Welpe},
-           familyi={W\bibinitperiod},
-           given={Isabell\bibnamedelima M.},
-           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d85e1d8b4c718e79ed38e2a9475b2dd4}{%
-           family={Sandner},
-           familyi={S\bibinitperiod},
-           given={Philipp\bibnamedelima G.},
-           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Rochester, NY}%
-      }
-      \strng{namehash}{9db21b33c623af71d0b9f4df26507b07}
-      \strng{fullhash}{9db21b33c623af71d0b9f4df26507b07}
-      \strng{bibnamehash}{9db21b33c623af71d0b9f4df26507b07}
-      \strng{authorbibnamehash}{9db21b33c623af71d0b9f4df26507b07}
-      \strng{authornamehash}{9db21b33c623af71d0b9f4df26507b07}
-      \strng{authorfullhash}{9db21b33c623af71d0b9f4df26507b07}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
+    \entry{KEVMCompleteFormal}{misc}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labeltitlesource}{title}
-      \field{abstract}{Decentralized Finance (DeFi) is the (r)evolutionary movement to create a solely code-based, intermediary-independent financial system—a movement which has grown from \$4bn to \$104bn in assets locked in the last three years. We present the first systematic literature review of the yet fragmented DeFi research field. By identifying, analyzing, and integrating 83 peer-reviewed DeFi-related publications, our results contribute fivefold. First, we confirm the increasing growth of academic DeFi publications through systematic analysis. Second, we frame DeFi-related literature into three levels of abstraction (micro, meso, and macro) and seven subcategories. Third, we identify Ethereum as the blockchain in main academic focus. Fourth, we show that prototyping is the dominant research method applied whereas only one paper has used primary research data. Fifth, we derive four prioritized research avenues, namely concerning i) DeFi protocol interaction and aggregation platforms, ii) decentralized off-chain data integration to DeFi, iii) DeFi agents, and iv) regulation.}
-      \field{langid}{english}
-      \field{number}{4016497}
-      \field{title}{Decentralized {{Finance}}—{{A Systematic Literature Review}} and {{Research Directions}}}
-      \field{type}{{{SSRN Scholarly Paper}}}
-      \field{urlday}{9}
+      \field{title}{{{KEVM}}: {{A Complete Formal Semantics}} of the {{Ethereum Virtual Machine}} | {{IEEE Conference Publication}} | {{IEEE Xplore}}}
+      \field{urlday}{19}
       \field{urlmonth}{11}
       \field{urlyear}{2023}
-      \field{year}{2022}
       \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.2139/ssrn.4016497
-      \endverb
       \verb{file}
-      \verb /Users/anajulia/Zotero/storage/JDEQ2JUS/Meyer et al. - 2022 - Decentralized Finance—A Systematic Literature Revi.pdf
+      \verb /Users/anajulia/Zotero/storage/KPT39Y5T/8429306.html
       \endverb
       \verb{urlraw}
-      \verb https://papers.ssrn.com/abstract=4016497
+      \verb https://ieeexplore.ieee.org/document/8429306
       \endverb
       \verb{url}
-      \verb https://papers.ssrn.com/abstract=4016497
+      \verb https://ieeexplore.ieee.org/document/8429306
       \endverb
-      \keyw{Blockchain,Decentralized Finance,DeFi,Literature Review,Research Directions}
     \endentry
     \entry{nakamotoBitcoinPeertoPeerElectronic}{article}{}
       \name{author}{1}{}{%
@@ -429,6 +491,95 @@
       \field{title}{Bitcoin: {{A Peer-to-Peer Electronic Cash System}}}
       \verb{file}
       \verb /Users/anajulia/Zotero/storage/K9U2BB7I/Nakamoto - Bitcoin A Peer-to-Peer Electronic Cash System.pdf
+      \endverb
+    \endentry
+    \entry{rupaIndustryEthereumBlockchain2021}{article}{}
+      \name{author}{10}{}{%
+        {{hash=84d3cd6eb008c7029dc0842045b0b456}{%
+           family={Rupa},
+           familyi={R\bibinitperiod},
+           given={Ch},
+           giveni={C\bibinitperiod}}}%
+        {{hash=30283d000ed752e0628904ab67fa38e5}{%
+           family={Midhunchakkaravarthy},
+           familyi={M\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1b0f471bcba04db399b54a0f2d1c681a}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Mohammad\bibnamedelima Kamrul},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9f0be1b871c51110874d8fbf83180261}{%
+           family={Alhumyani},
+           familyi={A\bibinitperiod},
+           given={Hesham},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e4416fcd5333edf2099a3f070f88bf2b}{%
+           family={Saeed},
+           familyi={S\bibinitperiod},
+           given={Rashid\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=84d3cd6eb008c7029dc0842045b0b456}{%
+           family={Rupa},
+           familyi={R\bibinitperiod},
+           given={Ch},
+           giveni={C\bibinitperiod}}}%
+        {{hash=30283d000ed752e0628904ab67fa38e5}{%
+           family={Midhunchakkaravarthy},
+           familyi={M\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1b0f471bcba04db399b54a0f2d1c681a}{%
+           family={Hasan},
+           familyi={H\bibinitperiod},
+           given={Mohammad\bibnamedelima Kamrul},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9f0be1b871c51110874d8fbf83180261}{%
+           family={Alhumyani},
+           familyi={A\bibinitperiod},
+           given={Hesham},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e4416fcd5333edf2099a3f070f88bf2b}{%
+           family={Saeed},
+           familyi={S\bibinitperiod},
+           given={Rashid\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{98b060cd89ff9a32fa8aae1686c14f24}
+      \strng{fullhash}{7961765fada8badb61cf4095de83ad98}
+      \strng{bibnamehash}{98b060cd89ff9a32fa8aae1686c14f24}
+      \strng{authorbibnamehash}{98b060cd89ff9a32fa8aae1686c14f24}
+      \strng{authornamehash}{98b060cd89ff9a32fa8aae1686c14f24}
+      \strng{authorfullhash}{7961765fada8badb61cf4095de83ad98}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{{$<$}abstract{$>$} 			{$<$}p{$>$}The use of advanced technologies has increased drastically to maintain any sensitive records related to education, health, or finance. It helps to protect the data from unauthorized access by attackers. However, all the existing advanced technologies face some issues because of their uncertainties. These technologies have some lapses to provide privacy, attack-free, transparency, reliability, and flexibility. These characteristics are essential while managing any sensitive data like educational certificates or medical certificates. Hence, we designed an Industry 5.0 based blockchain application to manage medical certificates using Remix Ethereum blockchain in this paper. This application also employs a distributed application (DApp) that uses a test RPC-based Ethereum blockchain and user expert system as a knowledge agent. The main strength of this work is the maintenance of existing certificates over a blockchain with the creation of new certificates that use logistic Map encryption cipher on existing medical certificates while uploading into the blockchain. This application helps to quickly analyze the birth, death, and sick rate as per certain features like location and year.{$<$}/p{$>$} 		{$<$}/abstract{$>$}}
+      \field{annotation}{Cc\_license\_type: cc\_by Primary\_atype: Mathematical Biosciences and Engineering Subject\_term: Research article Subject\_term\_id: Research article}
+      \field{issn}{1551-0018}
+      \field{journaltitle}{Mathematical Biosciences and Engineering}
+      \field{langid}{english}
+      \field{number}{mbe-18-05-349}
+      \field{shorttitle}{Industry 5.0}
+      \field{title}{Industry 5.0: {{Ethereum}} Blockchain Technology Based {{DApp}} Smart Contract}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{18}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{7010\bibrangedash 7027}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.3934/mbe.2021349
+      \endverb
+      \verb{urlraw}
+      \verb http://www.aimspress.com/rticle/doi/10.3934/mbe.2021349
+      \endverb
+      \verb{url}
+      \verb http://www.aimspress.com/rticle/doi/10.3934/mbe.2021349
       \endverb
     \endentry
     \entry{scharDecentralizedFinanceBlockchain}{misc}{}
@@ -622,31 +773,62 @@
       \verb https://en.wikipedia.org/w/index.php?title=Turing%5C_completeness%5C&oldid=1183169013
       \endverb
     \endentry
-    \entry{woodETHEREUMSECUREDECENTRALISED}{article}{}
-      \name{author}{1}{}{%
-        {{hash=11a65a2786fdfb7c4db11a639c0b0326}{%
-           family={Wood},
-           familyi={W\bibinitperiod},
-           given={Dr\bibnamedelima Gavin},
-           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+    \entry{zhangSoKBlockchainDecentralization2023}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=359ab680288a001909e649491ad9dad1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Luyao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=aa9bcfef5f39b00631ffee8990358af0}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xinshi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=45013475b7175b160f9391fb1f2ccc00}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yulin},
+           giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \strng{fullhash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \strng{bibnamehash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \strng{authorbibnamehash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \strng{authornamehash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \strng{authorfullhash}{11a65a2786fdfb7c4db11a639c0b0326}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{fa430d43015e9a49ecf91ae329e9c387}
+      \strng{fullhash}{fa430d43015e9a49ecf91ae329e9c387}
+      \strng{bibnamehash}{fa430d43015e9a49ecf91ae329e9c387}
+      \strng{authorbibnamehash}{fa430d43015e9a49ecf91ae329e9c387}
+      \strng{authornamehash}{fa430d43015e9a49ecf91ae329e9c387}
+      \strng{authorfullhash}{fa430d43015e9a49ecf91ae329e9c387}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The blockchain paradigm when coupled with cryptographically-secured transactions has demonstrated its utility through a number of projects, not least Bitcoin. Each such project can be seen as a simple application on a decentralised, but singleton, compute resource. We can call this paradigm a transactional singleton machine with shared-state.}
-      \field{langid}{english}
-      \field{title}{{{ETHEREUM}}: {{A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER}}}
-      \verb{file}
-      \verb /Users/anajulia/Zotero/storage/ZQYKS3U2/Wood - ETHEREUM A SECURE DECENTRALISED GENERALISED TRANS.pdf
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Blockchain introduces decentralized trust in peer-to-peer networks, advancing security and democratizing systems. Yet, a unified definition for decentralization remains elusive. Our Systematization of Knowledge (SoK) seeks to bridge this gap, emphasizing quantification and methodological coherence. We've formulated a taxonomy defining blockchain decentralization across five facets: consensus, network, governance, wealth, and transaction. Despite the prevalent focus on consensus decentralization, our novel index, based on Shannon entropy, provides comprehensive insights. Moreover, we delve into alternative metrics like the Gini and Nakamoto Coefficients and the Herfindahl-Hirschman Index (HHI), supplemented by an open-source Python tool on GitHub. In terms of methodology, blockchain research has often bypassed stringent scientific methods. By employing descriptive, predictive, and causal methods, our study showcases the potential of structured research in blockchain. Descriptively, we observe a trend of converging decentralization levels over time. Examining DeFi platforms reveals exchange and lending applications as more decentralized than their payment and derivatives counterparts. Predictively, there's a notable correlation between Ether's returns and transaction decentralization in Ether-backed stablecoins. Causally, Ethereum's transition to the EIP-1559 transaction fee model has a profound impact on DeFi transaction decentralization. To conclude, our work outlines directions for blockchain research, emphasizing the delicate balance among decentralization facets, fostering long-term decentralization, and the ties between decentralization, security, privacy, and efficiency. We end by spotlighting challenges in grasping blockchain decentralization intricacies.}
+      \field{eprintclass}{cs, econ, q-fin}
+      \field{eprinttype}{arxiv}
+      \field{month}{8}
+      \field{number}{arXiv:2205.04256}
+      \field{shorttitle}{{{SoK}}}
+      \field{title}{{{SoK}}: {{Blockchain Decentralization}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2205.04256
       \endverb
-      \keyw{yellowpaper}
+      \verb{file}
+      \verb /Users/anajulia/Zotero/storage/HQ6CCYU9/Zhang et al. - 2023 - SoK Blockchain Decentralization.pdf;/Users/anajulia/Zotero/storage/GKMQH2E6/2205.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2205.04256
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2205.04256
+      \endverb
+      \keyw{Computer Science - Cryptography and Security,Computer Science - Databases,Computer Science - Social and Information Networks,E.0,Economics - General Economics,G.1,G.3,I.6,J.4,J.6,Quantitative Finance - Statistical Finance}
     \endentry
     \entry{zhangDemystifyingExploitableBugs2023a}{inproceedings}{}
       \name{author}{4}{}{%
