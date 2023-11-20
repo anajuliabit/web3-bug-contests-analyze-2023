@@ -1,4 +1,4 @@
-* Solidity common vulnerabilities
+* Web 3 Bugs Contests Analyze 2023
 
 This repository contains a [[./results/bugs.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
 
