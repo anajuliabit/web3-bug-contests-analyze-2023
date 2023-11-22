@@ -1,0 +1,40 @@
+#+TITLE: Análise de Bugs em Contratos Inteligentes de Blockchains Compatíveis com Ethereum Virtual Machine: Janeiro a Setembro de 2023
+
+#+AUTHOR: Ana Julia Bittencourt Fogaça
+
+* Foco do Estudo
+   - Análise de 145 bugs identificados em 31 competições de auditoria pública (Jan-Set 2023) de projetos que rodam na EVM
+   - Objetivo: Compreender e classificar vulnerabilidades emergentes
+
+* Visão Geral da Tecnologia Blockchain
+   - Introduzida em 2008 com o whitepaper do Bitcoin
+     Projetado para ser um meio de pagamento digital sem intermediários
+     "Moeda descentralizada": Desvincular o dinheiro de governos
+   - Características
+     Segurança robusta, transparência, rastreabilidade, natureza de código aberto
+   - Uso notável em criptomoedas, ultrapassando o valor de mercado de mais de um trilhão de dólares até 2023
+
+[[file:crypto_mktcap.png]]
+
+
+* Mudança de Paradigma com o surgimento Ethereum
+   - Lançado em 2014 por Vitalik Buterin
+   - Introdução de "contratos inteligentes"
+   - Ethereum Virtual Machine: Máquina virtual Turing-complete
+[[file:evm.png]]
+
+   - Novos casos de uso para aplicações blockchain
+     Finanças, gerenciamento de cadeia de suprimentos, identidade, saúde e governança eleitoral, entre outros..
+
+* Vulnerabilidades de Contratos Inteligentes
+   - Contratos criados por humanos suscetíveis a falhas
+   - Alvos atraentes para hackers devido a natureza de código aberto
+   - Ataques à rede Ethereum no primeiro trimestre de 2023: Roubo de 320 milhões de dólares
+
+* Importância das Auditorias de Contratos Inteligentes
+   - Auditorias privadas e públicas (ex.: Code4rena, Sherlock)
+   - Redução nas perdas financeiras para projetos auditados
+   - Desafios na detecção precoce de vulnerabilidades
+
+* Metodologia
+* Análise

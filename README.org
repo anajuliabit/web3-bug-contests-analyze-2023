@@ -1,6 +1,8 @@
 * Web 3 Bugs Contests Analyze 2023
 
-This repository contains a [[./results/bugs.csv][dataset]] of high vulnerabilities registered on [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January 2023 to September 2023. The dataset is composed of 100 vulnerabilities (more will be added) which were manually classified into the categories described [[./categories.org][here]]
+This repository includes a [[./results/bugs.csv][dataset]] of high vulnerabilities recorded on the platforms [[https://code4rena.com/][Code 4 Arena]] and [[https://www.sherlock.xyz/][Sherlock]] between January and September 2023. The dataset comprises 145 vulnerabilities, which have been manually categorized into the classifications described [[./categories.org][here]].
+
+A [[paper/sbc.pdf][paper]] has been prepared to present the findings of this analysis.
 
 ** Contests
 
