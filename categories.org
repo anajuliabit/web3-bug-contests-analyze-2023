@@ -29,7 +29,6 @@
 - C09: Lack of signature replay protection, e.g missing nonce, hash collision
 - C11: DoS
   Denial of Service (DoS) vulnerabilities occur when an attacker can exploit a contract in a way that makes it unresponsive or significantly less efficient. This category includes cases that are not well described by another class and where the primary consequence is contract shut-down or operational inefficiency.
-
 - C10: Missing check.
     Missing Check refers to a critical oversight in a smart contract's code where a necessary condition or validation is not properly implemented.
 - C12: Data validation: Data validation vulnerabilities arise when a smart contract does not adequately verify or sanitize inputs, especially those from untrusted sources. This lack of validation can lead to unintended and potentially harmful consequences within the contract’s operations.
