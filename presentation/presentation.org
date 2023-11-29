@@ -1,8 +1,8 @@
-#+TITLE: Análise de Bugs em Contratos Inteligentes de Blockchains Compatíveis com Ethereum Virtual Machine: Janeiro a Setembro de 2023
+#+Title: Análise de Bugs em Contratos Inteligentes de Blockchains Compatíveis com Ethereum Virtual Machine: Janeiro a Setembro de 2023
 
 #+AUTHOR: Ana Julia Bittencourt Fogaça
 
-* Foco do Estudo
+* Foco do Artigo
    - Análise de 145 bugs identificados em 31 competições de auditoria pública (Jan-Set 2023) de projetos que rodam na EVM
    - Objetivo: Compreender, classificar e identificar a dificuldade na identificação de vulnerabilidades
 
@@ -20,6 +20,7 @@
 Seu uso em criptomoedas ganhou proeminência, com o valor de mercado excedendo um trilhão de dólares até 2023.
 [[file:crypto_mktcap.png]]
 
+
 * Mudança de Paradigma com o surgimento Ethereum
 - Lançado em 2014 por Vitalik Buterin
 - Introdução de "contratos inteligentes"
@@ -32,9 +33,9 @@ Seu uso em criptomoedas ganhou proeminência, com o valor de mercado excedendo u
 ** Crédito (ex: Aave)
    [[file:traditional_vs_defi_credit.png]]
 ** Derivativos (ex: GMX)
-   Opções, contratos futuros
-** CDBD (Central Bank Digital Currency)
-   DREX: Brasil  foi um dos primeiros países a utilizar a tecnologia blockchain para criação do seu CDBD
+Opções, contratos futuros
+** CBDC (Central Bank Digital Currency)
+   DREX: Brasil  foi um dos primeiros países a utilizar a tecnologia blockchain para criação do seu CBDC
 
 * Casos de Uso Futuro
 ** Tokenização de Ativos do Mundo Real (RWA)
@@ -83,6 +84,7 @@ Protocolos que gerenciam posições de liquidez em formadores de mercado automat
 ** Empréstimos
 Protocolos que permitem o empréstimo e a tomada de empréstimos de diversos ativos.
 
+
 * Classificação dos Bugs
 - O: Fora do Escopo
 - C01: Manipulação do Mempool / Vulnerabilidades de Front-Running
@@ -113,10 +115,10 @@ Protocolos que permitem o empréstimo e a tomada de empréstimos de diversos ati
   particularmente daquelas oriundas de fontes externas.
 - C13: Correspondência de Lista Branca/Lista Negra. Gerenciamento inadequado de
   endereços baseado em listas predefinidas.
-- C14: Arrays. Vulnerabilidades associadas ao manuseio inadequado de arrays,
-  incluindo:
+- C14: Arrays. Vulnerabilidades associadas ao manuseio inadequado de arrays
 
 * Competições
+
 [[file:contests.png]]
 
 * Análise
@@ -124,13 +126,13 @@ Protocolos que permitem o empréstimo e a tomada de empréstimos de diversos ati
 [[file:../results/average_auditors_by_class.png]]
 
   - C08: Falhas Específicas na Implementação de Contratos
-  - C02:  Vulnerabilidades de Reentrância
+  - C02: Vulnerabilidades de Reentrância
   - C10: Ausência de Verificações
   - C05: Problemas de Controle de Acesso e Escalada de Privilégios (C05)
-  - C14:  Arrays
+  - C14: Arrays
   - C01: Manipulação de Mempool / Vulnerabilidades de Front-Running
 
-** Quantidade de bugs encontrados em cada classificação
+** Contagem de Bugs por Classificação
 
 [[file:../results/bugs_by_class.png]]
 
@@ -139,23 +141,30 @@ Protocolos que permitem o empréstimo e a tomada de empréstimos de diversos ati
 - C03: Atualizações de Estado Errôneas
 - C02: Vulnerabilidades de Reentrância
 - C08:  Falhas Específicas na Implementação de Contratos
+- C13: Vulnerabilidades como o uso de funções de hash inseguras
 
+** Frequência de Classificações por Categoria de Protocolo
 
-5. Classes Menos Frequentes (C02, C08, C13): Vulnerabilidades como Reentrância
-   (C02) e  (C08) são menos
-   frequentes, conforme a Figura 2, o que pode indicar maior dificuldade de
-   detecção, alinhando-se com a descoberta 1 de que C02 e C08 são categorias
-   desafiadoras. A classe C13, que inclui vulnerabilidades como o uso de funções
-   de hash inseguras, também é menos frequente.
+[[file:../results/bugs_by_protocol_category_with_class_as_hue.png]]
 
-6. Classes dominantes de vulnerabilidades, como Lógica de Negócios Quebrada
-   (C07), Atualizações de Estado Incorretas (C03), Problemas de Controle de
-   Acesso e Escalada de Privilégios (C05), e Erros de Cálculo (C06), são
-   recorrentes em várias categorias, conforme indica a Figura 3. Esses padrões
-   reforçam a prevalência destes tipos de vulnerabilidades.
+- C07: Lógica de negócio quebrada
+- C03: Atualizações de Estado Incoprretas
+- C05:  Problemas de Controle de Acesso e Escalada de Privilégios
+- C06: Erros de Cálculo
 
-7. Diferentes categorias de protocolo apresentam distintos perfis de
-   vulnerabilidade. Protocolos Dexes registraram o maior número de bugs, com
-   34.3% dos bugs identificados pertencendo a esta categoria, seguido por
-   Derivativos com 18.2%, e Agregadores e Stablecoins com aproximadamente 10%
-   cada, conforme ilustrado na Figura 4.
+** Distribuição Percentual por Categoria de Protoclo
+[[file:../results/bugs_by_protocol_category.png]]
+
+* Discussão dos resultados
+1. Complexidade na identificação de vulnerabilidades em contratos inteligentes.
+2. Foco na verificação de lógica matemática
+3. Vulnerabilidades na lógica de negócios e atualizações do Estado
+4. Difierentes perfis de vulnerabilidade em diferentes protocolos
+
+* Recomendações e estudos futuros
+1. Adoção de práticas rigorosas de teste e validação.
+2. Importância de ferramentas de análise sofisticadas e educação contínua para desenvolvedores e auditores.
+3. Recomendação para uso de inteligência artificial e aprendizado de máquina em detecção e análise de vulnerabilidades.
+4. Desenvolvimento de benchmarks e frameworks padronizados para segurança em contratos inteligentes.
+
+* https://github.com/anajuliabit/web3_bug_contests_analyze_2023
